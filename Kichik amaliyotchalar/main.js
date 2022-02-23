@@ -11,3 +11,14 @@ foo < 30 && foo > 18
   : foo <= 17
   ? console.log("Yoshiz jud kichik ekan")
   : console.log("Yoshingiz juda katta ekan");
+
+// Fungsiyalar
+let birtYear = prompt("Tug'ilgan yilingizni kiriting");
+let nowYear = prompt("Joriy yilni kiriting");
+
+function hisobla(birtYear, nowYear) {
+  let yosh = nowYear - birtYear;
+  return yosh;
+}
+
+alert(hisobla(birtYear, nowYear));
