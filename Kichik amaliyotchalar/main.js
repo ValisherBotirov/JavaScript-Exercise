@@ -67,6 +67,6 @@
 // persons[1] = "Zarifjon";
 // console.log(persons);
 
-const books = ["book1", "book2", "book3"];
-const aboutMe = ["Valisher", "Botirov", books, 20, 2022];
-console.log(aboutMe);
+// const books = ["book1", "book2", "book3"];
+// const aboutMe = ["Valisher", "Botirov", books, 20, 2022];
+// console.log(aboutMe);
