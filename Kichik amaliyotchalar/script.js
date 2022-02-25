@@ -167,3 +167,79 @@
 // };
 
 // calcAge();
+
+// let person = {
+//   firstName: "Valisher",
+//   lastName: "Botirov",
+//   person2: {
+//     age: 20,
+//     location: "Tashkent",
+//   },
+// };
+
+// console.log(person.person2["age"]);
+
+// ===================================================================
+//          Ichma-ich sekillar
+
+// let hafta = [
+//   "Dushunba",
+//   "Seshanba",
+//   "Chorshanba",
+//   "Payshanba",
+//   "Juma",
+//   "Shanba",
+// ];
+// let inc = 2;
+// for (let i = 0; i < hafta.length; i++) {
+//   console.log(hafta[i]);
+//   for (let j = 1; j < inc; j++) {
+//     console.log(`${j} para`);
+//   }
+//   inc++;
+// }
+
+// Dasturcha 2 talik sikl
+
+// for (let i = 0; i <= 6; i++) {
+//   switch (i) {
+//     case 0:
+//       console.log("Dushanba");
+//       break;
+//     case 1:
+//       console.log("Seshanba");
+//       break;
+//     case 2:
+//       console.log("Chorshanba");
+//       break;
+//     case 3:
+//       console.log("Payshanba");
+//       break;
+//     case 4:
+//       console.log("Juma");
+//       break;
+//     case 5:
+//       console.log("Shanba");
+//       break;
+//     case 6:
+//       console.log("Yakshanba");
+//       break;
+//   }
+
+//   for (let j = 0; j <= 6; j++) {
+//     if (i <= 5) {
+//       console.log(`${i + 1} para dars bor`);
+//     } else console.log("Dars yoq");
+//   }
+// }
+
+//        dastur 5dan katta toq son chiqar
+
+let rand = Math.trunc(Math.random() * 10);
+while (rand <= 5 || rand % 2 !== 1) {
+  console.log(`toq son ${rand}`);
+
+  rand = Math.trunc(Math.random() * 10 + 1);
+}
+
+console.log(`Stop ${rand}`);

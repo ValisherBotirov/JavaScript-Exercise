@@ -22,3 +22,5 @@ for (let i = 0; i < bell.length; i++) {
 }
 console.log(usluga);
 console.log(total);
+
+// splice includes indexOf unshift
