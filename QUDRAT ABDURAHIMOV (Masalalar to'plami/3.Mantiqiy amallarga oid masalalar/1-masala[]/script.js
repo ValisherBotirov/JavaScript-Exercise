@@ -49,3 +49,22 @@
 // let a = 4;
 // let b = 3;
 // console.log(Boolean(a % 2 == 0 && b % 2 == 1) || (a % 2 == 1 && b % 2 == 0));
+// let mantiq = Boolean(Number(prompt("Uylanganmisiz?")));
+// function ask(mantiq) {
+//   if (mantiq === "ha") {
+//     console.log("sen uylangansan");
+//   } else if (mantiq === "yoq") {
+//     console.log("Uylansang bumaydimi");
+//   } else console.log("Qayta urunib koring");
+// }
+
+// let arr = [
+//   prompt("Ism"),
+//   prompt("Familiya"),
+//   Number(prompt("Age kirit")),
+//   ask() = prompt("Uylanganmisiz?"),
+// ];
+
+// ask(mantiq);
+
+// console.log(arr);
