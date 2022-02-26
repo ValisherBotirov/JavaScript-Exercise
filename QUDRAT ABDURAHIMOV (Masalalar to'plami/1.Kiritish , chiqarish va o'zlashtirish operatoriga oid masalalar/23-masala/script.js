@@ -1,0 +1,12 @@
+let A = "bir";
+let B = "ikki";
+let C = "uch";
+let add, add2;
+add = C;
+add2 = B;
+B = A;
+C = add2;
+A = add;
+console.log(A);
+console.log(B);
+console.log(C);
