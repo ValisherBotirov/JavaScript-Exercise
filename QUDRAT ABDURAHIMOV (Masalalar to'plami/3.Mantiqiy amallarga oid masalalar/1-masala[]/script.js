@@ -95,10 +95,26 @@
 // console.log(Boolean(a != b && b != c && a != c));
 
 // 21-masala
-let son = 123;
-let a, b, c;
-c = son % 10;
-a = Math.trunc(son / 100);
-b = Math.trunc((son % 100) / 10);
-console.log(a, b, c);
-console.log(Boolean(a < b && b < c));
+// let son = 123;
+// let a, b, c;
+// c = son % 10;
+// a = Math.trunc(son / 100);
+// b = Math.trunc((son % 100) / 10);
+// console.log(a, b, c);
+// console.log(Boolean(a < b && b < c));
+
+// 23-masala
+// let son = 121;
+// let a, b, c;
+// c = son % 10;
+// a = Math.trunc(son / 100);
+// b = Math.trunc((son % 100) / 10);
+// console.log(a, b, c);
+
+let a = Number(prompt("a ni kiriting"));
+let n = Number(prompt("n ni kiriting"));
+
+for (let i = 1; i < n; i++) {
+  a = a * a;
+}
+console.log(a);
