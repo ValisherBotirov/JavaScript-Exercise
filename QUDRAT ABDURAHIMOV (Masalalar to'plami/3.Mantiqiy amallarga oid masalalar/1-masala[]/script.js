@@ -127,7 +127,17 @@
 // console.log(Boolean(x % 2 == 0 && y % 2 !== 0))
 
 //25-masala
-let x, y;
-x = -2;
-y = 5;
-console.log(Boolean(y > 0 && x < 0));
+// let x, y;
+// x = -2;
+// y = 5;
+// console.log(Boolean(y > 0 && x < 0));
+
+// 29-masala
+// let x, y, x1, y1, x2, y2;
+// x1 = 1;
+// y1 = 2;
+// x2 = 8;
+// y2 = 7;
+// x = 4;
+// y = 5;
+// console.log(Boolean(y >= y1 && y <= y2 && x >= x1 && x <= x2));
