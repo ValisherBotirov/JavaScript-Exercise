@@ -121,7 +121,13 @@
 // console.log(Boolean(String(a) == String(c)));
 
 // 34-masala
+// let x, y;
+// x = 2;
+// y = 5;
+// console.log(Boolean(x % 2 == 0 && y % 2 !== 0))
+
+//25-masala
 let x, y;
-x = 2;
+x = -2;
 y = 5;
-console.log(Boolean(x % 2 == 0 && y % 2 !== 0));
+console.log(Boolean(y > 0 && x < 0));
