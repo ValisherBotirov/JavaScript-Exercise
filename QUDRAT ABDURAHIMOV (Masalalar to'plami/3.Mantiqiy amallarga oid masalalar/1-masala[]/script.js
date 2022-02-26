@@ -119,3 +119,9 @@
 // b = Math.trunc((son % 100) / 10);
 // console.log(a, b, c);
 // console.log(Boolean(String(a) == String(c)));
+
+// 34-masala
+let x, y;
+x = 2;
+y = 5;
+console.log(Boolean(x % 2 == 0 && y % 2 !== 0));
