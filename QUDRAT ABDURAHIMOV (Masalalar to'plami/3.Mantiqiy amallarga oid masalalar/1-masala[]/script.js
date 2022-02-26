@@ -68,3 +68,11 @@
 // ask(mantiq);
 
 // console.log(arr);
+
+// 16-masala[17]
+let son = prompt("Ixtiyoriy son kiriting");
+let uzunlik = son.length;
+let oxirgiRaqam = son % 10;
+
+console.log(uzunlik, oxirgiRaqam);
+console.log(Boolean(uzunlik == 2 && oxirgiRaqam % 2 == 0));
