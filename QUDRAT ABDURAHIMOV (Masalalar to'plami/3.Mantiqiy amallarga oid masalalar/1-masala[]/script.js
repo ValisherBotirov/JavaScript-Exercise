@@ -70,9 +70,17 @@
 // console.log(arr);
 
 // 16-masala[17]
-let son = prompt("Ixtiyoriy son kiriting");
-let uzunlik = son.length;
-let oxirgiRaqam = son % 10;
+// let son = prompt("Ixtiyoriy son kiriting");
+// let uzunlik = son.length;
+// let oxirgiRaqam = son % 10;
 
-console.log(uzunlik, oxirgiRaqam);
-console.log(Boolean(uzunlik == 2 && oxirgiRaqam % 2 == 0));
+// console.log(uzunlik, oxirgiRaqam);
+// console.log(Boolean(uzunlik == 2 && oxirgiRaqam % 2 == 0));
+
+// 18-masala
+let a, b, c;
+a = 2;
+b = 3;
+c = 2;
+
+console.log(Boolean(a == b || b == c || a == c));
