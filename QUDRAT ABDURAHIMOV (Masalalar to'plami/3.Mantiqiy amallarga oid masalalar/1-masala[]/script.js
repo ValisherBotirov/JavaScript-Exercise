@@ -78,9 +78,18 @@
 // console.log(Boolean(uzunlik == 2 && oxirgiRaqam % 2 == 0));
 
 // 18-masala
-let a, b, c;
-a = -2;
-b = 3;
-c = 2;
+// let a, b, c;
+// a = -2;
+// b = 3;
+// c = 2;
 
-console.log(Boolean(a == -b || b == -c || a == -c));
+// console.log(Boolean(a == -b || b == -c || a == -c));
+
+// 20-masala
+// let son = 122;
+// let a, b, c;
+// c = son % 10;
+// a = Math.trunc(son / 100);
+// b = Math.trunc((son % 100) / 10);
+// console.log(a, b, c);
+// console.log(Boolean(a != b && b != c && a != c));
