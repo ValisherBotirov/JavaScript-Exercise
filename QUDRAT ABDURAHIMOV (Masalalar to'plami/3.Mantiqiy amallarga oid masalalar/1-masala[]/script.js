@@ -79,8 +79,8 @@
 
 // 18-masala
 let a, b, c;
-a = 2;
+a = -2;
 b = 3;
 c = 2;
 
-console.log(Boolean(a == b || b == c || a == c));
+console.log(Boolean(a == -b || b == -c || a == -c));
