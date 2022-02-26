@@ -8,9 +8,6 @@
 // let C = 6;
 // console.log(Boolean(A <= B && B <= C));
 // 9-masala
-let a = 4;
-let b = 4;
-console.log(Boolean(a % 2 == 0 || b % 2 == 0));
 
 //=========================================
 //  Objectlarni birlashtirish
@@ -38,11 +35,17 @@ console.log(Boolean(a % 2 == 0 || b % 2 == 0));
 // console.log(count);
 // ===================================================
 // Kiritilgan sonning raqamlar yig'indisini topadigan son
-let number = prompt((arr = []));
-console.log(`Kiritilgan sonning raqamlar soni:  ${number.length}`);
-let sum = 0;
-for (let i = 0; i < number.length; i++) {
-  sum = sum + Number(number[i]);
-}
-console.log(`Kiritilgan sonning raqamlar yig'indisi:  ${sum}`);
+
+// let number = prompt((arr = []));
+// console.log(`Kiritilgan sonning raqamlar soni:  ${number.length}`);
+// let sum = 0;
+// for (let i = 0; i < number.length; i++) {
+//   sum = sum + Number(number[i]);
+// }
+// console.log(`Kiritilgan sonning raqamlar yig'indisi:  ${sum}`);
+
 // ==========================================
+// 10-masala
+// let a = 4;
+// let b = 3;
+// console.log(Boolean(a % 2 == 0 && b % 2 == 1) || (a % 2 == 1 && b % 2 == 0));
