@@ -26,6 +26,8 @@ let userJob = {
   job: "Fullstact Developer",
 };
 
+console.log(Object.assign(user, userAge, userJob));
+
 // let arr = [15, -5, 2, -9, -8, 65, -5, -7, 8, -10];
 // let count = 0;
 // for (let i = 0; i < arr.length; i++) {
