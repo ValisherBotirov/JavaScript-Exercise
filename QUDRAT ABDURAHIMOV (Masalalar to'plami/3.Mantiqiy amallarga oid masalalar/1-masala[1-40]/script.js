@@ -141,3 +141,12 @@
 // x = 4;
 // y = 5;
 // console.log(Boolean(y >= y1 && y <= y2 && x >= x1 && x <= x2));
+
+// 31-masala
+// let a, b, c;
+// a = 3;
+// b = 3;
+// c = 3;
+// console.log(
+//   Boolean(a == b || b == c || (a == c && a == b && b == c && a == c))
+// );
