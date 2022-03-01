@@ -119,9 +119,9 @@
 // ==============================================================
 //  String Metodsga oid amaliyot
 // ===============================================
-let str = "Valishera Botirov";
-let str2 = "salom";
-let int = 123;
+// let str = "Valishera Botirov";
+// let str2 = "salom";
+// let int = 123;
 // let x = str.indexOf("a");
 // console.log(x);
 // let y = str.lastIndexOf("a");
@@ -133,10 +133,25 @@ let int = 123;
 // console.log(y);
 // console.log(str.slice(-3));
 // console.log(str.substring(5, 1));
-console.log(str.concat(str2, "aka"));
+// console.log(str.concat(str2, "aka"));
 // str = str.concat(str2);
 // console.log(str);
-console.log(str2.slice(str2.length - 3));
-let string = String(int);
-console.log(string.split(""));
-console.log(str2.split("a"));
+// console.log(str2.slice(str2.length - 3));
+// let string = String(int);
+// console.log(string.split(""));
+// console.log(str2.split("a"));
+// let x = str2.split("");
+// console.log(x);
+let a = "chesk";
+let b = "c";
+function myFunction(a, b) {
+  let result;
+  let arr = a.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (a[i] === b) {
+      result = b + a;
+    } else result = a + b;
+  }
+  return result;
+}
+console.log(myFunction(a, b));
