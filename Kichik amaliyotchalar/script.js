@@ -235,11 +235,20 @@
 
 //        dastur 5dan katta toq son chiqar
 
-let rand = Math.trunc(Math.random() * 10);
-while (rand <= 5 || rand % 2 !== 1) {
-  console.log(`toq son ${rand}`);
+// let rand = Math.trunc(Math.random() * 10);
+// while (rand <= 5 || rand % 2 !== 1) {
+//   console.log(`toq son ${rand}`);
 
-  rand = Math.trunc(Math.random() * 10 + 1);
-}
+//   rand = Math.trunc(Math.random() * 10 + 1);
+// }
 
-console.log(`Stop ${rand}`);
+// console.log(`Stop ${rand}`);
+
+// let x1, x2, y1, y2;
+// x1 = 4;
+// y1 = 3;
+// x2 = 6;
+// y2 = 1;
+// if (x1 == x2 || y1 == y2) {
+//   console.log("yes");
+// } else console.log("no");
