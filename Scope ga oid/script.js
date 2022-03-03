@@ -82,7 +82,19 @@ const cafe = {
       `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
     );
   },
+  buyurtmaniYetkazish: function (x, y, z) {
+    // const {x,y,z}=p;
+    console.log(
+      `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
+    );
+  },
+  muzqaymoq: function (first, second, third) {
+    console.log(
+      `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
+    );
+  },
 };
+cafe.buyurtmaniYetkazish(1, 2, 1);
 
 // let [birinchi, , , uchunchi] = cafe.taomlari;
 // [birinchi, uchunchi] = [uchunchi, birinchi];
@@ -102,7 +114,33 @@ const cafe = {
 // =====================================================
 // Destiraction Object
 
-let { cafeName, taomlari, ichimliklar } = cafe;
-console.log(cafeName);
-console.log(taomlari);
-console.log(ichimliklar);
+// let {
+//   cafeName,
+//   taomlari,
+//   ichimliklar,
+//   ochilishVaqti: { dushanba },
+// } = cafe;
+// console.log(cafeName);
+// console.log(taomlari);
+// console.log(ichimliklar);
+// console.log(dushanba
+//   );
+// -------------------------
+//   const c = {
+//     x:4,
+//     b:8
+//   }
+
+// let y = function(obj){
+//   const {a,b} = obj;
+//   console.log( a+b);
+// }
+
+// y(c);
+
+let ichimlik = cafe.ichimliklar;
+let newIchimlik = ["fanta ", "limon choy", "kampot"];
+let newArr = [...ichimlik, ...newIchimlik];
+console.log(newArr);
+let newShirinlik = [...cafe.shirinliklar];
+console.log(newShirinlik);
