@@ -44,22 +44,65 @@
 //   calc2();
 // }
 // calc();
-let a = 10;
-let b = 5;
+// let a = 10;
+// let b = 5;
 
-let aboutMe = {
-  name: "Valisher",
-  surname: "Botirov",
-  age: 20,
-  birtYear: 2002,
-  nowYear: 2022,
-  study: {
-    university: "TATU",
+// let aboutMe = {
+//   name: "Valisher",
+//   surname: "Botirov",
+//   age: 20,
+//   birtYear: 2002,
+//   nowYear: 2022,
+//   study: {
+//     university: "TATU",
+//   },
+
+//   calc: function () {
+//     return this.birtYear - this.nowYear;
+//   },
+// };
+
+// console.log(aboutMe.calc());
+
+// ======================================================
+// MagicCafe objecti
+
+const cafe = {
+  cafeName: "MagicCafe",
+  taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
+  shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
+  ichimliklar: ["cola", "pepsi", "choy"],
+  ochilishVaqti: {
+    dushanba: { open: "8:00", close: "22:00" },
+    shanba: { open: "6:00", close: "22:00" },
   },
-
-  calc: function () {
-    return this.birtYear - this.nowYear;
+  location: "Tashkent/Yunusabad/TATU",
+  order: function (taom, ichimlik) {
+    console.log(
+      `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
+    );
   },
 };
 
-console.log(aboutMe.calc());
+// let [birinchi, , , uchunchi] = cafe.taomlari;
+// [birinchi, uchunchi] = [uchunchi, birinchi];
+// console.log(birinchi, uchunchi);
+
+// // Masala ichma ich arrayga oid
+// let b;
+// let arr = [1, 2, 3, [4, 5, 6]];
+// for (let i = 0; i < arr.length; i++) {
+//   if (typeof arr[i] == "object") {
+//     b = arr[i][0];
+//     break;
+//   }
+// }
+// console.log(b);
+
+// =====================================================
+// Destiraction Object
+
+let { cafeName, taomlari, ichimliklar } = cafe;
+console.log(cafeName);
+console.log(taomlari);
+console.log(ichimliklar);
