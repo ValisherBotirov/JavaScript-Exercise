@@ -211,19 +211,44 @@ cafe.buyurtmaniYetkazish(1, 2, 1);
 // const [x, y, ...kerakEmas] = arr;
 // console.log(x, y, ...kerakEmas);
 
-let x = [...cafe.taomlari, ...cafe.ichimliklar];
-const [ovqat1, ovqat2, ...kerakEmas] = x;
-console.log(ovqat1, ovqat2, kerakEmas);
+// let x = [...cafe.taomlari, ...cafe.ichimliklar];
+// const [ovqat1, ovqat2, ...kerakEmas] = x;
+// console.log(ovqat1, ovqat2, kerakEmas);
 
-function add(...raqamlar) {
-  let sum = 0;
-  for (let i = 0; i < raqamlar.length; i++) {
-    sum += raqamlar[i];
-  }
-  console.log(sum);
+// function add(...raqamlar) {
+//   let sum = 0;
+//   for (let i = 0; i < raqamlar.length; i++) {
+//     sum += raqamlar[i];
+//   }
+//   console.log(sum);
+// }
+// add(1, 2, 3);
+
+// console.log(0 || 0 || NaN || 0 || "" || NaN || undefined);
+// cafe.odam = 0;
+// console.log(cafe.odam ?? "Bunday qiymat mavjud emas");
+
+// For of loopi
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// for (let elemet of a) {
+//   console.log(elemet);
+// }
+// console.log("for ni asli bilan");
+// for (let i = 0; i < a.length; i++) {
+//   console.log(a[i]);
+// }
+let newArr = [...cafe.ichimliklar, ...cafe.taomlari];
+console.log(newArr);
+for (let [a, b] of newArr.entries()) {
+  console.log(`${a + 1} - ${b}`);
 }
-add(1, 2, 3);
 
-console.log(0 || 0 || NaN || 0 || "" || NaN || undefined);
-cafe.odam = 0;
-console.log(cafe.odam ?? "Bunday qiymat mavjud emas");
+let obj = {
+  name: "Valisher",
+  age: 20,
+  job: "Developer",
+};
+
+for (let kalit of keys(obj)) {
+  console.log(kalit);
+}
