@@ -67,34 +67,34 @@
 // ======================================================
 // MagicCafe objecti
 
-const cafe = {
-  cafeName: "MagicCafe",
-  taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
-  shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
-  ichimliklar: ["cola", "pepsi", "choy"],
-  ochilishVaqti: {
-    dushanba: { open: "8:00", close: "22:00" },
-    shanba: { open: "6:00", close: "22:00" },
-  },
-  location: "Tashkent/Yunusabad/TATU",
-  order: function (taom, ichimlik) {
-    console.log(
-      `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
-    );
-  },
-  buyurtmaniYetkazish: function (x, y, z) {
-    // const {x,y,z}=p;
-    console.log(
-      `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
-    );
-  },
-  muzqaymoq: function (first, second, third) {
-    console.log(
-      `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
-    );
-  },
-};
-cafe.buyurtmaniYetkazish(1, 2, 1);
+// const cafe = {
+//   cafeName: "MagicCafe",
+//   taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
+//   shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
+//   ichimliklar: ["cola", "pepsi", "choy"],
+//   ochilishVaqti: {
+//     dushanba: { open: "8:00", close: "22:00" },
+//     shanba: { open: "6:00", close: "22:00" },
+//   },
+//   location: "Tashkent/Yunusabad/TATU",
+//   order: function (taom, ichimlik) {
+//     console.log(
+//       `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
+//     );
+//   },
+//   buyurtmaniYetkazish: function (x, y, z) {
+//     // const {x,y,z}=p;
+//     console.log(
+//       `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
+//     );
+//   },
+//   muzqaymoq: function (first, second, third) {
+//     console.log(
+//       `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
+//     );
+//   },
+// };
+// cafe.buyurtmaniYetkazish(1, 2, 1);
 
 // let [birinchi, , , uchunchi] = cafe.taomlari;
 // [birinchi, uchunchi] = [uchunchi, birinchi];
@@ -138,9 +138,69 @@ cafe.buyurtmaniYetkazish(1, 2, 1);
 
 // y(c);
 
-let ichimlik = cafe.ichimliklar;
-let newIchimlik = ["fanta ", "limon choy", "kampot"];
-let newArr = [...ichimlik, ...newIchimlik];
-console.log(newArr);
-let newShirinlik = [...cafe.shirinliklar];
-console.log(newShirinlik);
+// let ichimlik = cafe.ichimliklar;
+// let newIchimlik = ["fanta ", "limon choy", "kampot"];
+// let newArr = [...ichimlik, ...newIchimlik];
+// console.log(newArr);
+// let newShirinlik = [...cafe.shirinliklar];
+// console.log(newShirinlik);
+
+// =======================================================================
+// O'tilgan mavzular bo'yicha amaliyot
+// console.log("Uyga vazifalar kichik amaliyotchalar");
+// let obj = {
+//   name: "Valisher",
+//   age: 20,
+// };
+// let newObj = { surname: "Botirov", job: "Developer", ...obj };
+// console.log(newObj);
+// Spreaddan fungsiya argumenti sifatida foydalanish
+// function add(x, y, z) {
+//   console.log(x + y + z);
+//   console.log(x);
+//   console.log(y);
+//   console.log(z);
+// }
+// let array = [1, 2, 3];
+// add(...array);
+// Stringni sochib olishga misol
+// let y = "Toshkent";
+// console.log(...y);
+// let count = 0;
+// for (let i = 0; i < y.length; i++) {
+//   count++;
+// }
+// console.log(count);
+// console.log(y.length);
+
+// Spreat yordamida arraydan nusxa olish
+// let v = ["I", "love", "TUIT"];
+// let m = ["Uzbekistan yoshlari"];
+// // let copy = [...v, "Valisher"];
+// let newarr = [...v, ...m];
+// console.log(newarr);
+
+// Fungsiyaga argument sifatida objectni berish
+// function myFunc(obj) {
+//   const { a, b, c } = obj;
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+// let x = {
+//   a: 20,
+//   b: 10,
+//   c: 5,
+// };
+// myFunc(x);
+
+// Ichma-ich turgan objectlarni variableni o'zgartirish
+// let me = {
+//   name: "Valisher",
+//   age: 20,
+//   me2: {
+//     surname: "Botirov",
+//   },
+// };
+// const { name } = me;
+// console.log(me.name);
