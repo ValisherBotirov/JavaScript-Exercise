@@ -67,34 +67,34 @@
 // ======================================================
 // MagicCafe objecti
 
-// const cafe = {
-//   cafeName: "MagicCafe",
-//   taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
-//   shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
-//   ichimliklar: ["cola", "pepsi", "choy"],
-//   ochilishVaqti: {
-//     dushanba: { open: "8:00", close: "22:00" },
-//     shanba: { open: "6:00", close: "22:00" },
-//   },
-//   location: "Tashkent/Yunusabad/TATU",
-//   order: function (taom, ichimlik) {
-//     console.log(
-//       `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
-//     );
-//   },
-//   buyurtmaniYetkazish: function (x, y, z) {
-//     // const {x,y,z}=p;
-//     console.log(
-//       `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
-//     );
-//   },
-//   muzqaymoq: function (first, second, third) {
-//     console.log(
-//       `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
-//     );
-//   },
-// };
-// cafe.buyurtmaniYetkazish(1, 2, 1);
+const cafe = {
+  cafeName: "MagicCafe",
+  taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
+  shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
+  ichimliklar: ["cola", "pepsi", "choy"],
+  ochilishVaqti: {
+    dushanba: { open: "8:00", close: "22:00" },
+    shanba: { open: "6:00", close: "22:00" },
+  },
+  location: "Tashkent/Yunusabad/TATU",
+  order: function (taom, ichimlik) {
+    console.log(
+      `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
+    );
+  },
+  buyurtmaniYetkazish: function (x, y, z) {
+    // const {x,y,z}=p;
+    console.log(
+      `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
+    );
+  },
+  muzqaymoq: function (first, second, third) {
+    console.log(
+      `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
+    );
+  },
+};
+cafe.buyurtmaniYetkazish(1, 2, 1);
 
 // let [birinchi, , , uchunchi] = cafe.taomlari;
 // [birinchi, uchunchi] = [uchunchi, birinchi];
@@ -204,3 +204,26 @@
 // };
 // const { name } = me;
 // console.log(me.name);
+
+// Elementlarni birlashtirish usullari
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const [x, y, ...kerakEmas] = arr;
+// console.log(x, y, ...kerakEmas);
+
+let x = [...cafe.taomlari, ...cafe.ichimliklar];
+const [ovqat1, ovqat2, ...kerakEmas] = x;
+console.log(ovqat1, ovqat2, kerakEmas);
+
+function add(...raqamlar) {
+  let sum = 0;
+  for (let i = 0; i < raqamlar.length; i++) {
+    sum += raqamlar[i];
+  }
+  console.log(sum);
+}
+add(1, 2, 3);
+
+console.log(0 || 0 || NaN || 0 || "" || NaN || undefined);
+cafe.odam = 0;
+console.log(cafe.odam ?? "Bunday qiymat mavjud emas");
