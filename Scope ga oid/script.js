@@ -328,19 +328,42 @@
 // console.log(sum(10));
 
 // Obektning string toifaga ega bo'lgan key va valuelarini chiqarish
-let obj = {
-  name: "Valisher",
-  surname: "Botirov",
-  age: 20,
-  stage: 1,
-  job: "Developer",
-};
+// let obj = {
+//   name: "Valisher",
+//   surname: "Botirov",
+//   age: 20,
+//   stage: 1,
+//   job: "Developer",
+// };
 
-function srt(obj) {
-  for (let key in obj) {
-    if (typeof obj[key] == "string") {
-      console.log(key, obj[key]);
-    }
-  }
-}
-srt(obj);
+// function srt(obj) {
+//   for (let key in obj) {
+//     if (typeof obj[key] == "string") {
+//       console.log(key, obj[key]);
+//     }
+//   }
+// }
+// srt(obj);
+// ---------------------------------------------------
+// for-of ga oid
+
+// let arr = ["a", "b", "c", 1, 2];
+// for (let key of arr.entries()) {
+//   console.log(key[0] + 1, key[1]);
+// }
+//
+// ----------------------------------------------------
+// Elementlarni qisqartirish
+// let about = {
+//   name: "Valisher",
+//   city: "Tashkent",
+// };
+// const obj = {
+//   about,
+//   order() {
+//     console.log("Hello");
+//   },
+// };
+
+// obj.order();
+// console.log(obj.about);
