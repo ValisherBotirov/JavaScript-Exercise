@@ -279,15 +279,68 @@
 // myName(add);
 
 // for-in xossasi
+// let obj = {
+//   name: "Valisher",
+//   age: 20,
+// };
+
+// for (let key in obj) {
+//   console.log(`${key} - ${obj[key]}`);
+// }
+
+// for (let key in obj) {
+//   console.log(obj[key]);
+// }
+
+// Spedga oid masala
+
+// function cheecSpeed(speed) {
+//   let point = 0;
+//   if (speed <= 70) {
+//     console.log("Ok");
+//   } else if (speed > 70) {
+//     point = Math.trunc((speed - 70) / 5);
+//     if (point < 12) {
+//       console.log(point);
+//     } else console.log("Guvohnoma olib qo'yiladi");
+//   }
+// }
+
+// cheecSpeed(60);
+
+// N sonigacha bo'lgan 3ga va 5ga bolinuvchi sonlarni yig'indisini chiqarib beruvchi dastur
+
+// function sum(limit) {
+//   let sum3 = 0;
+//   let sum5 = 0;
+//   for (let i = 0; i <= limit; i++) {
+//     if (i % 3 == 0) {
+//       sum3 += i;
+//     }
+//   }
+//   for (let i = 0; i <= limit; i++) {
+//     if (i % 5 == 0) {
+//       sum5 += i;
+//     }
+//   }
+//   return sum3 + sum5;
+// }
+// console.log(sum(10));
+
+// Obektning string toifaga ega bo'lgan key va valuelarini chiqarish
 let obj = {
   name: "Valisher",
+  surname: "Botirov",
   age: 20,
+  stage: 1,
+  job: "Developer",
 };
 
-for (let key in obj) {
-  console.log(`${key} - ${obj[key]}`);
+function srt(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == "string") {
+      console.log(key, obj[key]);
+    }
+  }
 }
-
-for (let key in obj) {
-  console.log(obj[key]);
-}
+srt(obj);
