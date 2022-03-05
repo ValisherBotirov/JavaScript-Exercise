@@ -277,3 +277,17 @@
 //   console.log(str);
 // };
 // myName(add);
+
+// for-in xossasi
+let obj = {
+  name: "Valisher",
+  age: 20,
+};
+
+for (let key in obj) {
+  console.log(`${key} - ${obj[key]}`);
+}
+
+for (let key in obj) {
+  console.log(obj[key]);
+}
