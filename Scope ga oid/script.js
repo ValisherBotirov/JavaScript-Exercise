@@ -367,3 +367,23 @@
 
 // obj.order();
 // console.log(obj.about);
+// ------------------------------------------------
+// Objectlarga nisbatan for-of loopini ishatish
+let obj = {
+  name: "Valisher",
+  surnam: "Botirov",
+  age: 20,
+  job: "Developer",
+  city: "Tashkent",
+};
+for (let key of Object.entries(obj)) {
+  console.log(key[0], key[1]);
+}
+
+for (let key of Object.keys(obj)) {
+  console.log(key);
+}
+
+for (let key in obj) {
+  console.log(key, obj[key]);
+}
