@@ -67,35 +67,35 @@
 // ======================================================
 // MagicCafe objecti
 
-const cafe = {
-  cafeName: "MagicCafe",
-  taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
-  shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
-  ichimliklar: ["cola", "pepsi", "choy"],
-  ochilishVaqti: {
-    dushanba: { open: "8:00", close: "22:00" },
-    shanba: { open: "6:00", close: "22:00" },
-  },
-  location: "Tashkent/Yunusabad/TATU",
-  order: function (taom, ichimlik) {
-    console.log(
-      `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
-    );
-  },
-  buyurtmaniYetkazish: function (x, y, z) {
-    // const {x,y,z}=p;
-    console.log(
-      `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
-    );
-  },
-  muzqaymoq: function (first, second, third) {
-    console.log(
-      `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
-    );
-  },
-};
-cafe.buyurtmaniYetkazish(1, 2, 1);
-
+// const cafe = {
+//   cafeName: "MagicCafe",
+//   taomlari: ["osh", "shorva", "beshtiks", "shashlik"],
+//   shirinliklar: ["mjzqaymoq", "tort", "paxlava"],
+//   ichimliklar: ["cola", "pepsi", "choy"],
+//   ochilishVaqti: {
+//     dushanba: { open: "8:00", close: "22:00" },
+//     shanba: { open: "6:00", close: "22:00" },
+//   },
+//   location: "Tashkent/Yunusabad/TATU",
+//   order: function (taom, ichimlik) {
+//     console.log(
+//       `Siz ${this.taomlari[taom]} osh buyutma qildix va ${this.ichimliklar[ichimlik]}  buyurtma qildiz `
+//     );
+//   },
+//   buyurtmaniYetkazish: function (x, y, z) {
+//     // const {x,y,z}=p;
+//     console.log(
+//       `Sizni buyurtmangizga quyidagilar kiradi: 1.${this.taomlari[x]},2.${this.shirinliklar[y]},3.${this.ichimliklar[z]}`
+//     );
+//   },
+//   muzqaymoq: function (first, second, third) {
+//     console.log(
+//       `Sizning muzqaymog'ingiz ${first},${second},${third} mevalaridan iborat `
+//     );
+//   },
+// };
+// cafe.buyurtmaniYetkazish(1, 2, 1);
+// ==============================================================================
 // let [birinchi, , , uchunchi] = cafe.taomlari;
 // [birinchi, uchunchi] = [uchunchi, birinchi];
 // console.log(birinchi, uchunchi);
@@ -237,18 +237,43 @@ cafe.buyurtmaniYetkazish(1, 2, 1);
 // for (let i = 0; i < a.length; i++) {
 //   console.log(a[i]);
 // }
-let newArr = [...cafe.ichimliklar, ...cafe.taomlari];
-console.log(newArr);
-for (let [a, b] of newArr.entries()) {
-  console.log(`${a + 1} - ${b}`);
-}
+// let newArr = [...cafe.ichimliklar, ...cafe.taomlari];
+// console.log(newArr);
+// for (let [a, b] of newArr.entries()) {
+//   console.log(`${a + 1} - ${b}`);
+// }
 
-let obj = {
-  name: "Valisher",
-  age: 20,
-  job: "Developer",
-};
+// let obj = {
+//   name: "Valisher",
+//   age: 20,
+//   job: "Developer",
+// };
 
-for (let kalit of keys(obj)) {
-  console.log(kalit);
-}
+// =====================================================
+//--------------- Shaxsiy amaliyotlarim-----------------
+//======================================================
+// let x = "Valisher";
+// let y = [...x];
+// console.log(y);
+// const [a, ...add] = y;
+// console.log(a);
+// console.log(add);
+
+// let obj = {
+//   name: "Valisher",
+//   age: 20,
+//   job: "Developer",
+//   city: "Tashkent",
+// };
+
+// const { age, ...other } = obj;
+// console.log(age);
+// console.log(other);
+
+// let myName = function (...str) {
+//   for (let i = 0; i < str.length; i++) {
+//     console.log(str[i]);
+//   }
+//   console.log(str);
+// };
+// myName(add);
