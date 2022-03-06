@@ -369,21 +369,47 @@
 // console.log(obj.about);
 // ------------------------------------------------
 // Objectlarga nisbatan for-of loopini ishatish
-let obj = {
-  name: "Valisher",
-  surnam: "Botirov",
-  age: 20,
-  job: "Developer",
-  city: "Tashkent",
-};
-for (let key of Object.entries(obj)) {
-  console.log(key[0], key[1]);
-}
+// let obj = {
+//   name: "Valisher",
+//   surnam: "Botirov",
+//   age: 20,
+//   job: "Developer",
+//   city: "Tashkent",
+// };
+// for (let key of Object.entries(obj)) {
+//   console.log(key[0], key[1]);
+// }
 
-for (let key of Object.keys(obj)) {
-  console.log(key);
-}
+// for (let key of Object.keys(obj)) {
+//   console.log(key);
+// }
 
-for (let key in obj) {
-  console.log(key, obj[key]);
-}
+// for (let key in obj) {
+//   console.log(key, obj[key]);
+// }
+
+// // ====================================================
+// // -----------MagicAlgo masalalar------------------------
+// // 2-masala
+// let str = "happy,newyear,enjoy";
+// let arr = str.split(",");
+// let strnew = arr.join(" ");
+
+// console.log(strnew);
+// --------------------------------------------
+// Yangiz mavzu
+// let set = new Set("aallii");
+// console.log(set);
+// console.log(set.size);
+// console.log(set.has("l"));
+// console.log(set.add("v"));
+// let arr = [1, 2, 3, 4, 5];
+// let s = new Set(arr);
+// console.log(s);
+
+// Map operatori
+const me = new Map();
+me.set("name", "Valisher");
+me.set(1, 20);
+console.log(me.get(1));
+console.log(me.get("name"));
