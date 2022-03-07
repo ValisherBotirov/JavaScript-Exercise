@@ -475,14 +475,58 @@
 // console.log(n);
 
 // Qo'shimcha amaliyotlar
-let str = "hello,world,unique";
-// let arr = str.split(",");
-let arr = [...str];
-let newArr = [];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] !== ",") {
-    newArr.push(arr[i]);
-  }
+// let str = "hello,world,unique";
+// // let arr = str.split(",");
+// let arr = [...str];
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] !== ",") {
+//     newArr.push(arr[i]);
+//   }
+// }
+// console.log(arr);
+// console.log(newArr.join(" "));
+
+// let set = new Set("Vaalir");
+// let arr = ["a", "b", "a", 1, 2, 1, "b"];
+// let newSet = new Set(arr);
+// console.log(set);
+// console.log(newSet);
+// console.log(set.size);
+// console.log(newSet.size);
+// console.log(set.has("a"));
+// newSet.add(3);
+// set.delete("a");
+// console.log(set);
+// // for (let elemet of set) {
+// //   console.log(elemet);
+// // }
+// const arr2 = [...set];
+// console.log(arr2);
+
+let map = new Map();
+map.set("name", "Valisher");
+map.set(1, 20);
+console.log(map.get("name"));
+
+console.log(map.has("name"));
+// map.delete(1);
+console.log(map);
+console.log(map.size);
+for (let [key, val] of map) {
+  console.log(key, val);
 }
-console.log(arr);
-console.log(newArr.join(" "));
+
+let obj = {
+  name: "Valisher",
+  age: 20,
+  job: "Developer",
+  city: "Tashkent",
+  book: "Atomic Habits",
+};
+
+let me = new Map(Object.entries(obj));
+console.log(me);
+
+let arr = [...me];
+console.log(...arr);
