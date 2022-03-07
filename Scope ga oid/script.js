@@ -408,8 +408,81 @@
 // console.log(s);
 
 // Map operatori
-const me = new Map();
-me.set("name", "Valisher");
-me.set(1, 20);
-console.log(me.get(1));
-console.log(me.get("name"));
+// const me = new Map();
+// me.set("name", "Valisher");
+// me.set(1, 20);
+// console.log(me.get(1));
+// console.log(me.get("name"));
+// console.log(me);
+
+// let arr = [1, 2];
+// const rest = new Map([
+//   [name, "Valisher"],
+//   [1, 20],
+//   ["familiya", "Botirov"],
+// ]);
+// rest.set(arr, "Name");
+// console.log(rest);
+// console.log(rest.get(1));
+// console.log(rest.get(arr));
+
+// Mapga oid real loyihacha
+// let kun = prompt("Kunni kiriting!").toLocaleLowerCase();
+// let ishKuni = ["dushanba", "seshanba", "chorshanba", "payshanba", "juma"];
+// let notIshKuni = ["shanba", "yakshanba"];
+
+// let ish = new Map([
+//   [true, "Ish kuni"],
+//   [false, "Ish kuni emas"],
+// ]);
+// if (ishKuni.includes(kun)) {
+//   console.log(ish.get(true));
+// } else console.log(ish.get(false));
+
+// Mapga oid real loyihacha-2
+// let savol = new Map([
+//   ["savol", "O'zbekistonni poytaxti: "],
+//   [1, "Toshknet"],
+//   [2, "Samarqand"],
+//   [3, "Buxoro"],
+//   ["javob", 1],
+//   [true, "Javob togri"],
+//   [false, "Javob noto'ri"],
+// ]);
+// console.log(savol.get("Savol"));
+// for (let [key, val] of savol) {
+//   if (typeof key == "number") {
+//     console.log(`${key}-javob: ${val}`);
+//   }
+// }
+// const kirit = Number(prompt("Javob raqamini kiriting"));
+// kirit == savol.get("javob")
+//   ? console.log(savol.get(true))
+//   : console.log(savol.get(false));
+
+// Qurt masala
+// let h, a, b;
+// h = 43;
+// a = 9;
+// b = 7;
+// let n = 0;
+// let sum = 0;
+
+// while (sum + a <= h) {
+//   sum = sum + a - b;
+//   n++;
+// }
+// console.log(n);
+
+// Qo'shimcha amaliyotlar
+let str = "hello,world,unique";
+// let arr = str.split(",");
+let arr = [...str];
+let newArr = [];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] !== ",") {
+    newArr.push(arr[i]);
+  }
+}
+console.log(arr);
+console.log(newArr.join(" "));

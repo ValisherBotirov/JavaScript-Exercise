@@ -34,29 +34,29 @@
 // console.log(sum.length);
 // --------------------------------------------
 // Uchta songa oid masala
-let k = 2;
-let s = 2;
+// let k = 2;
+// let s = 2;
 
-let x = 0;
-let y = 0;
-let z = 0;
-let arrX = [];
-let arrY = [];
-let a = 0;
+// let x = 0;
+// let y = 0;
+// let z = 0;
+// let arrX = [];
+// let arrY = [];
+// let a = 0;
 
-for (let i = 0; i <= k; i++) {
-  arrX.push(x);
-  x++;
-  arrY.push(y);
-  y++;
-}
+// for (let i = 0; i <= k; i++) {
+//   arrX.push(x);
+//   x++;
+//   arrY.push(y);
+//   y++;
+// }
 
-for (let i = 0; i < arrX.length; i++) {
-  for (let j = 0; j < arrY.length; j++) {
-    if (s - arrX[i] - arrY[j] <= k && s - arrX[i] - arrY[j] >= 0) a++;
-  }
-}
-console.log(a);
+// for (let i = 0; i < arrX.length; i++) {
+//   for (let j = 0; j < arrY.length; j++) {
+//     if (s - arrX[i] - arrY[j] <= k && s - arrX[i] - arrY[j] >= 0) a++;
+//   }
+// }
+// console.log(a);
 // ------------------------------------------------------
 
 // 4-masala
@@ -109,21 +109,40 @@ console.log(a);
 // console.log(newMember);
 
 // 9-masala(Arrayga oid)
-// let arr = [[[]]];
-// let count = 0;
-// let count1 = 0;
-// let count2 = 0;
-// for (let i = 0; i < arr.length; i++) {
-//   count++;
-//   if (typeof arr[i] == "object") {
-//     for (let j = 0; j < arr[i].length; j++) {
-//       count1++;
-//       if (typeof arr[i][j] == "object") {
-//         for (let k = 0; k < arr[i][j].length; k++) {
-//           count2++;
-//         }
-//       }
-//     }
-//   }
-// }
-// console.log(count + count1 + count2);
+let input = [[[]]];
+let count = 0;
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
+let count4 = 0;
+let count5 = 0;
+for (let i = 0; i < input.length; i++) {
+  count++;
+  if (typeof input[i] == "object") {
+    for (let j = 0; j < input[i].length; j++) {
+      count1++;
+      if (typeof input[i][j] == "object") {
+        for (let k = 0; k < input[i][j].length; k++) {
+          count2++;
+          // ----
+          if (typeof input[i][j][k] == "object") {
+            for (let m = 0; m < input[i][j][k].length; m++) {
+              count3++;
+              if (typeof input[i][j][k][m] == "object") {
+                for (let n = 0; n < input[i][j][k][m].length; n++) {
+                  count4++;
+                  if (typeof input[i][j][k][m][n] == "object") {
+                    for (let a = 0; a < input[i][j][k][m].length; a++) {
+                      count5++;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+console.log(count + count1 + count2 + count3 + count4 + count5);
