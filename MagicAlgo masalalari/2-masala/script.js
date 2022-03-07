@@ -109,40 +109,69 @@
 // console.log(newMember);
 
 // 9-masala(Arrayga oid)
-let input = [[[]]];
-let count = 0;
-let count1 = 0;
-let count2 = 0;
-let count3 = 0;
-let count4 = 0;
-let count5 = 0;
-for (let i = 0; i < input.length; i++) {
-  count++;
-  if (typeof input[i] == "object") {
-    for (let j = 0; j < input[i].length; j++) {
-      count1++;
-      if (typeof input[i][j] == "object") {
-        for (let k = 0; k < input[i][j].length; k++) {
-          count2++;
-          // ----
-          if (typeof input[i][j][k] == "object") {
-            for (let m = 0; m < input[i][j][k].length; m++) {
-              count3++;
-              if (typeof input[i][j][k][m] == "object") {
-                for (let n = 0; n < input[i][j][k][m].length; n++) {
-                  count4++;
-                  if (typeof input[i][j][k][m][n] == "object") {
-                    for (let a = 0; a < input[i][j][k][m].length; a++) {
-                      count5++;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+// let input = [[[]]];
+// let count = 0;
+// let count1 = 0;
+// let count2 = 0;
+// let count3 = 0;
+// let count4 = 0;
+// let count5 = 0;
+// for (let i = 0; i < input.length; i++) {
+//   count++;
+//   if (typeof input[i] == "object") {
+//     for (let j = 0; j < input[i].length; j++) {
+//       count1++;
+//       if (typeof input[i][j] == "object") {
+//         for (let k = 0; k < input[i][j].length; k++) {
+//           count2++;
+//           // ----
+//           if (typeof input[i][j][k] == "object") {
+//             for (let m = 0; m < input[i][j][k].length; m++) {
+//               count3++;
+//               if (typeof input[i][j][k][m] == "object") {
+//                 for (let n = 0; n < input[i][j][k][m].length; n++) {
+//                   count4++;
+//                   if (typeof input[i][j][k][m][n] == "object") {
+//                     for (let a = 0; a < input[i][j][k][m].length; a++) {
+//                       count5++;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// console.log(count + count1 + count2 + count3 + count4 + count5);
+
+// -------------------------------------------------
+// 11-masala
+let l1 = [2, 4, 3];
+let l2 = [5, 6, 4];
+let newl1 = [];
+let newl2 = [];
+
+for (let i = l1.length - 1; i >= 0; i--) {
+  newl1.push(l1[i]);
 }
-console.log(count + count1 + count2 + count3 + count4 + count5);
+for (let i = l2.length - 1; i >= 0; i--) {
+  newl2.push(l2[i]);
+}
+let son1 = Number(newl1.join(""));
+let son2 = Number(newl2.join(""));
+
+let sum = son1 + son2;
+
+let revArr = [];
+let resultArr = [];
+revArr = String(sum).split("");
+
+for (let i = revArr.length - 1; i >= 0; i--) {
+  resultArr.push(revArr[i]);
+}
+let str = resultArr.join(",");
+
+console.log(`[${resultArr}]`);

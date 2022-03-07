@@ -504,29 +504,52 @@
 // const arr2 = [...set];
 // console.log(arr2);
 
-let map = new Map();
-map.set("name", "Valisher");
-map.set(1, 20);
-console.log(map.get("name"));
+// let map = new Map();
+// map.set("name", "Valisher");
+// map.set(1, 20);
+// console.log(map.get("name"));
 
-console.log(map.has("name"));
-// map.delete(1);
-console.log(map);
-console.log(map.size);
-for (let [key, val] of map) {
-  console.log(key, val);
+// console.log(map.has("name"));
+// // map.delete(1);
+// console.log(map);
+// console.log(map.size);
+// for (let [key, val] of map) {
+//   console.log(key, val);
+// }
+
+// let obj = {
+//   name: "Valisher",
+//   age: 20,
+//   job: "Developer",
+//   city: "Tashkent",
+//   book: "Atomic Habits",
+// };
+
+// let me = new Map(Object.entries(obj));
+// console.log(me);
+
+// let arr = [...me];
+// console.log(...arr);
+
+// Farhod Dadajonov amaliyot
+const marks = [81, 74, 86, 59, 77];
+function calc(marks) {
+  let sum = 0;
+  let arf;
+  for (let i = 0; i < marks.length; i++) {
+    sum = sum + marks[i];
+  }
+  arf = sum / marks.length;
+  if (arf >= 0 && arf <= 50) {
+    console.log("F");
+  } else if (arf > 50 && arf <= 60) {
+    console.log("D");
+  } else if (arf > 60 && arf <= 70) {
+    console.log("C");
+  } else if (arf > 70 && arf <= 80) {
+    console.log("B");
+  } else if (arf > 80 && arf <= 100) {
+    console.log("A");
+  }
 }
-
-let obj = {
-  name: "Valisher",
-  age: 20,
-  job: "Developer",
-  city: "Tashkent",
-  book: "Atomic Habits",
-};
-
-let me = new Map(Object.entries(obj));
-console.log(me);
-
-let arr = [...me];
-console.log(...arr);
+calc(marks);
