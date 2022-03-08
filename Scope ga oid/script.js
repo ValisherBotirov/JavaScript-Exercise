@@ -532,24 +532,103 @@
 // console.log(...arr);
 
 // Farhod Dadajonov amaliyot
-const marks = [81, 74, 86, 59, 77];
-function calc(marks) {
-  let sum = 0;
-  let arf;
-  for (let i = 0; i < marks.length; i++) {
-    sum = sum + marks[i];
-  }
-  arf = sum / marks.length;
-  if (arf >= 0 && arf <= 50) {
-    console.log("F");
-  } else if (arf > 50 && arf <= 60) {
-    console.log("D");
-  } else if (arf > 60 && arf <= 70) {
-    console.log("C");
-  } else if (arf > 70 && arf <= 80) {
-    console.log("B");
-  } else if (arf > 80 && arf <= 100) {
-    console.log("A");
+// const marks = [81, 74, 86, 59, 77];
+// function calc(marks) {
+//   let sum = 0;
+//   let arf;
+//   for (let i = 0; i < marks.length; i++) {
+//     sum = sum + marks[i];
+//   }
+//   arf = sum / marks.length;
+//   if (arf >= 0 && arf <= 50) {
+//     console.log("F");
+//   } else if (arf > 50 && arf <= 60) {
+//     console.log("D");
+//   } else if (arf > 60 && arf <= 70) {
+//     console.log("C");
+//   } else if (arf > 70 && arf <= 80) {
+//     console.log("B");
+//   } else if (arf > 80 && arf <= 100) {
+//     console.log("A");
+//   }
+// }
+// calc(marks);
+
+// 10-
+// let arr = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < i; j++) {
+//     console.log(arr[i]);
+//   }
+// }
+
+// let str = "assalomu Alaykum kursdoshlar yaxshimisizlar";
+// let arr = str.split(" ");
+// let newArr = [];
+// //console.log(arr[0].toUpperCase());
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i][0].toLowerCase()) {
+//     arr[i][0] === arr[i][0].toUpperCase();
+//   }
+
+//   // newArr.push(arr[i]);
+// }
+// let nameStr = "9998 1221 6542 9876";
+// let str = nameStr.slice(-4);
+// console.log(str.padStart(19, "**** "));
+// ---------------------------------a
+// let car = [
+//   { name: "Malibo", cost: 1200 },
+//   { neme: "Tracker", cost: 1000 },
+//   { neme: "Gentra", cost: 1000 },
+//   { neme: "Cobolt", cost: 1000 },
+// ];
+
+// let auto = function (marka, narx) {
+//   switch (marka) {
+//     case "chevrolet":
+//       for (let i = 0; i < car.length; i++) {
+//         if (car[i].narx > 1000) {
+//           console.log(car[i]);
+//         }
+//       }
+//   }
+// };
+// auto("chevrolet", 1000);
+// ----------------------------------------------------------
+// Kutubxona objectini yaratib uni fungsiyani ichida foydalanish
+// let library = {
+//   name: "Alisher Navoiy",
+// };
+
+// let obj = {
+//   name: "Valisher",
+//   age: 20,
+//   id: 0998,
+// };
+// // let idMe = Number(prompt("Id raqamingizni kiriting!"));
+
+// let myFunc = function (obj, lib) {
+//   if (idMe == obj.id) {
+//     console.log(`Xush kelibsiz ${obj.name}! ${lib.name} kutubxonasiga`);
+//   } else console.log("Parolni xato kiritdingiz...");
+// };
+
+// myFunc(obj, library);
+
+// Tub sonlar
+let son = 23;
+let count = 0;
+for (let i = 2; i <= son; i++) {
+  for (let j = 2; j <= i; j++) {}
+  if (son % i == 0) {
+    count++;
   }
 }
-calc(marks);
+if (count == 1) {
+  console.log("Son tub son");
+}
+if (count >= 2) {
+  console.log("Son tub son emas");
+}
