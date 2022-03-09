@@ -142,16 +142,63 @@
 // console.log(str2.split("a"));
 // let x = str2.split("");
 // console.log(x);
-let a = "chesk";
-let b = "c";
-function myFunction(a, b) {
-  let result;
-  let arr = a.split("");
-  for (let i = 0; i < arr.length; i++) {
-    if (a[i] === b) {
-      result = b + a;
-    } else result = a + b;
+// let a = "chesk";
+// let b = "c";
+// function myFunction(a, b) {
+//   let result;
+//   let arr = a.split("");
+//   for (let i = 0; i < arr.length; i++) {
+//     if (a[i] === b) {
+//       result = b + a;
+//     } else result = a + b;
+//   }
+//   return result;
+// }
+// console.log(myFunction(a, b));
+
+// Forga oid masalalar davomi
+// 7-masala
+// let a = 2;
+// let b = 5;
+// if (a > b) {
+//   console.log(2);
+// } else console.log(1);
+
+// 17-masala
+// let arr = [2, 1, 3];
+// console.log(spli);
+// let newArr = arr.sort();
+// if (arr === newArr) {
+//   // console.log( * 2);
+// }
+
+// Arrayni max elementini topish
+// let arr = [1, 2, 3, 20, 4, 5, 10, 15];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+let a = "oq";
+let b = "qora";
+let c;
+console.log(a, b);
+c = a;
+a = b;
+
+b = c;
+console.log(a, b);
+// Sort algaritmi
+let arr = [1, 3, 2, 5, 4, 8, 7, 6];
+let b;
+for (let i = 0; i < arr.length; i++) {
+  if (a[i] > a[i + 1]) {
+    b = a[i];
+    a[i] = a[i + 1];
+    a[i + 1] = b;
   }
-  return result;
 }
-console.log(myFunction(a, b));
+console.log(arr);

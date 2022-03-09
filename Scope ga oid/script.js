@@ -618,17 +618,110 @@
 // myFunc(obj, library);
 
 // Tub sonlar
-let son = 23;
-let count = 0;
-for (let i = 2; i <= son; i++) {
-  for (let j = 2; j <= i; j++) {}
-  if (son % i == 0) {
-    count++;
-  }
-}
-if (count == 1) {
-  console.log("Son tub son");
-}
-if (count >= 2) {
-  console.log("Son tub son emas");
-}
+// let son = 23;
+// let count = 0;
+// for (let i = 2; i <= son; i++) {
+//   for (let j = 2; j <= i; j++) {}
+//   if (son % i == 0) {
+//     count++;
+//   }
+// }
+// if (count == 1) {
+//   console.log("Son tub son");
+// }
+// if (count >= 2) {
+//   console.log("Son tub son emas");
+// }
+// --------------------------------------------
+// First class and Higher order class
+
+// function calc(a) {
+//   return function (x, y) {
+//     return a + x * y;
+//   };
+// }
+
+// let d = calc(10);
+// console.log(d(10, 1));
+
+// function add(a, b) {
+//   return a + b;
+// }
+// let result = add(5, 10);
+// function qosh(a, x) {
+//   return a + x;
+// }
+// console.log(qosh(5, result));
+
+// function count() {
+//   let counter = 0;
+//   return function () {
+//     console.log(counter++);
+//   };
+// }
+
+// let str = "Salom dunyo";
+// console.log(str.split(""));
+
+// Js calculator
+
+// function qush(a, b) {
+//   console.log(a + b);
+// }
+// function ayir(a, b) {
+//   console.log(a - b);
+// }
+// function kopaytir(a, b) {
+//   console.log(a * b);
+// }
+// function bolisg(a, b) {
+//   console.log(a / b);
+// }
+
+// let calc = function (x, y, fn) {
+//   fn(x, y);
+// };
+
+// calc(10, 5, qush);
+
+// Ichma ich fungsiyalar
+// function salom(ism) {
+//   console.log("1-fungsiya");
+//   return function (name) {
+//     console.log("2-fungsiya");
+//     return function (age) {
+//       console.log("3-fungsiya");
+//       console.log(`${ism} ${name} ${age}`);
+//     };
+//   };
+// }
+// salom();
+// let a = salom("Valisher");
+// let b = a("Botirov");
+
+// let c = b(19);
+// salom("Botriov")("Valisher")(20 );
+
+// Aply va Call methodlari
+
+const universityTatu = {
+  name: "TATU",
+  talabalarSoni: 9500,
+  davomat(jami, kelganlari) {
+    console.log(
+      `${this.name} universetutida ${jami} talabadan ${
+        jami - kelganlari
+      } ta talaba kelmagan`
+    );
+  },
+};
+universityTatu.davomat(9500, 9400);
+
+let davomat = universityTatu.davomat;
+const universityUzmu = {
+  name: "UzMU",
+  talabalarSoni: 16500,
+};
+let arr = [17000, 16900];
+davomat.call(universityUzmu, 16500, 16450);
+davomat.apply(universityUzmu, arr);
