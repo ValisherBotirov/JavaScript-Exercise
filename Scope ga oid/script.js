@@ -746,7 +746,7 @@
 let magicPhone = {
   name: "Samsung",
 };
-magicPhone.phones = 10;
+magicPhone.phones = 0;
 magicPhone.buy = function () {
   console.log(++this.phones);
 };
@@ -757,8 +757,143 @@ document.getElementById("btn").addEventListener("click", function () {
   document.querySelector(".btn-sqr").textContent = magicPhone.phones++;
 });
 
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-let str = "9982 5698 1235 6984";
-let newStr = str.slice(-4);
-console.log(newStr);
-console.log(newStr.padStart(19, "**** "));
+// // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// let str = "9982 5698 1235 6984";
+// let newStr = str.slice(-4);
+// console.log(newStr);
+// console.log(newStr.padStart(19, "**** "));
+
+// function multple(x, y) {
+//   return x * y;
+// }
+
+// function calc(a, func) {
+//   return a + func;
+// }
+// console.log(calc(10, multple(2, 5)));
+
+// function yosh(a) {
+//   return function (b) {
+//     return a + b;
+//   };
+// }
+// let x = yosh(2);
+// console.log(x(6));
+// console.log(" ");
+// for (let i = "*"; i.length < 8; i = i + "*") {
+//   console.log(i);
+// }
+
+// let line1 = "* * * * * * * * * * *";
+// let line2 = " * * * * * * * * * * * ";
+// let rusult;
+// for (let i = 0; i < 10; i++) {
+//   if (i % 2 == 0) {
+//     console.log(line1);
+//   } else console.log(line2);
+// }
+// Basic JavaScriptning objecti
+// 1-masala
+// let obj = {
+//   content: "Asiya",
+//   country: "UZB",
+// };
+
+// console.log(obj.country);
+
+// (function (country) {
+//   console.log(country);
+// })("Samarqand");
+
+// let arr = [1, -2, -5, -8, 4, 6, -9, -16];
+
+// function calc(arr) {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(calc(arr));
+
+// splice and slice
+// let arrNew = ["u", "m", "i", "d"];
+// console.log(arrNew.slice(2));
+// let srt = arrNew.slice(-2, -1);
+// console.log(srt);
+// console.log(arrNew);
+// console.log(arrNew.splice(0, 2));
+// console.log(arrNew);
+
+// concat
+// let arr1 = ["Valisher"];
+// let arr2 = ["Botirov"];
+// let y = [...arr1, ...arr2, "TUIT"];
+// console.log(y);
+// console.log(arr2.concat(arr1, "TUIT"));
+// console.log(arr2);
+// console.log(arr1);
+
+// join methodi
+// let arr = ["Salom"];
+// console.log(arr);
+// console.log(arr.join(" "));
+// let arr2 = ["s", "a", "l", "o", "m"];
+// console.log(arr2);
+// console.log(arr2.join(" "));
+
+// AT methodi
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(arr.at(-2));
+// // console.log[arr.length(-2)]
+
+// For each
+// let arr = [1, 2, 3, 4, 5, 6];
+// arr.forEach(function (val, key, arr) {
+//   console.log(arr);
+// });
+// ======================================================
+// Mapga ishlatilishi
+let map = new Map([
+  ["USD", "Amerika dollari"],
+  ["UZB", "O'zbekiston sumi"],
+  ["EUR", "Yevro"],
+]);
+map.forEach(function (val, key) {
+  console.log(`${key}- ${val}`);
+});
+// Arraylarda ishlatilishi
+let arrFor = [100, -200, 500, -450, -320, 300, -800, 1600];
+arrFor.forEach(function (val, key) {
+  if (val > 0) {
+    console.log(`Kirim bo'lgan summa ${val}`);
+  } else console.log(`Chiqim bo'lgan summalar ${val}`);
+});
+// Setda ishlatilihsi
+let set = new Set("1 2 3 3 3 2 5");
+console.l;
+
+// ============================================
+// map methodi
+let arr = [10, 20, 30, 40, 50];
+let x = arr.map(function (val, key) {
+  return val * 10;
+});
+console.log(x);
+// --------------------------------------------------------
+let botirovPay = {
+  name: "Valisher Botirov",
+  balance: 2000,
+  transaction: [],
+  pin: 1218,
+};
+
+let umidPay = {
+  name: "Umid Rustamon",
+  balance: 3000,
+  transaction: [],
+  pin: 1228,
+};
