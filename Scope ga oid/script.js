@@ -704,24 +704,61 @@
 
 // Aply va Call methodlari
 
-const universityTatu = {
-  name: "TATU",
-  talabalarSoni: 9500,
-  davomat(jami, kelganlari) {
-    console.log(
-      `${this.name} universetutida ${jami} talabadan ${
-        jami - kelganlari
-      } ta talaba kelmagan`
-    );
-  },
-};
-universityTatu.davomat(9500, 9400);
+// const universityTatu = {
+//   name: "TATU",
+//   talabalarSoni: 9500,
+//   davomat(jami, kelganlari) {
+//     console.log(
+//       `${this.name} universetutida ${jami} talabadan ${
+//         jami - kelganlari
+//       } ta talaba kelmagan`
+//     );
+//   },
+// };
+// universityTatu.davomat(9500, 9400);
 
-let davomat = universityTatu.davomat;
-const universityUzmu = {
-  name: "UzMU",
-  talabalarSoni: 16500,
+// let davomat = universityTatu.davomat;
+// const universityUzmu = {
+//   name: "UzMU",
+//   talabalarSoni: 16500,
+// };
+// let arr = [17000, 16900];
+// davomat.call(universityUzmu, 16500, 16450);
+// davomat.apply(universityUzmu, arr);
+
+// let me = {
+//   name: "Valisher",
+//   order(modul, age, loc) {
+//     console.log(modul, age, loc);
+//   },
+// };
+// me.order("Developer", 20, "Tashkent");
+
+// let you = {
+//   name: "Senoior",
+// };
+
+// let newOrder = me.order;
+// let yourOrder = newOrder.bind(you);
+// newOrder("Valisher", 20, "Samarqand");
+// newOrder("Valisher", 20, "Samarqand + Tashkent");
+
+let magicPhone = {
+  name: "Samsung",
 };
-let arr = [17000, 16900];
-davomat.call(universityUzmu, 16500, 16450);
-davomat.apply(universityUzmu, arr);
+magicPhone.phones = 10;
+magicPhone.buy = function () {
+  console.log(++this.phones);
+};
+console.log(magicPhone.phones);
+let func = magicPhone.buy.bind(magicPhone);
+
+document.getElementById("btn").addEventListener("click", function () {
+  document.querySelector(".btn-sqr").textContent = magicPhone.phones++;
+});
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+let str = "9982 5698 1235 6984";
+let newStr = str.slice(-4);
+console.log(newStr);
+console.log(newStr.padStart(19, "**** "));
