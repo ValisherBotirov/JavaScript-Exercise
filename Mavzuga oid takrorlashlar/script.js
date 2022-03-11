@@ -981,25 +981,51 @@ document.getElementById("btn").addEventListener("click", function () {
 
 // ----------------------------------------
 // map metodi
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let map = arr.map(function (val) {
+//   return val * 10;
+// });
+// console.log(map);
+
+// let filter = arr.filter(function (val) {
+//   return val > 5;
+// });
+// console.log(filter);
+
+// let newMap = [
+//   ["name", "Valisher"],
+//   ["age", 20],
+//   ["birtYear", 2002],
+//   ["city", "Tashknet"],
+// ];
+
+// let cv = newMap.map(function (key, val) {
+//   return val;
+// });
+// console.log(cv);
+
+// ====================================
+// reduse mehtodi
+// sonlar yigindisi
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let x = arr.reduce(function (sum, val, key) {
+//   return sum + val;
+// }, 0);
+// console.log(x);
+
+// array elemtlaridan kattasini aniqlash
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let map = arr.map(function (val) {
-  return val * 10;
-});
-console.log(map);
-
-let filter = arr.filter(function (val) {
-  return val > 5;
-});
-console.log(filter);
-
-let newMap = [
-  ["name", "Valisher"],
-  ["age", 20],
-  ["birtYear", 2002],
-  ["city", "Tashknet"],
-];
-
-let cv = newMap.map(function (key, val) {
-  return val;
-});
-console.log(cv);
+let x = arr.reduce(function (katta, val) {
+  if (katta < val) return val;
+  else return katta;
+}, arr[0]);
+console.log(x);
+// let arrNew = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let max;
+// max = arrNew[0];
+// for (let i = 0; i < arrNew.length; i++) {
+//   if (arrNew[i] > max) {
+//     max = arrNew[i];
+//   }
+// }
+// console.log(max);
