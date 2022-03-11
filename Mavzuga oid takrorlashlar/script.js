@@ -857,43 +857,149 @@ document.getElementById("btn").addEventListener("click", function () {
 // });
 // ======================================================
 // Mapga ishlatilishi
-let map = new Map([
-  ["USD", "Amerika dollari"],
-  ["UZB", "O'zbekiston sumi"],
-  ["EUR", "Yevro"],
-]);
-map.forEach(function (val, key) {
-  console.log(`${key}- ${val}`);
-});
-// Arraylarda ishlatilishi
-let arrFor = [100, -200, 500, -450, -320, 300, -800, 1600];
-arrFor.forEach(function (val, key) {
-  if (val > 0) {
-    console.log(`Kirim bo'lgan summa ${val}`);
-  } else console.log(`Chiqim bo'lgan summalar ${val}`);
-});
+// let map = new Map([
+//   ["USD", "Amerika dollari"],
+//   ["UZB", "O'zbekiston sumi"],
+//   ["EUR", "Yevro"],
+// ]);
+// map.forEach(function (val, key) {
+//   console.log(`${key}- ${val}`);
+// });
+// // Arraylarda ishlatilishi
+// let arrFor = [100, -200, 500, -450, -320, 300, -800, 1600];
+// arrFor.forEach(function (val, key) {
+//   if (val > 0) {
+//     console.log(`Kirim bo'lgan summa ${val}`);
+//   } else console.log(`Chiqim bo'lgan summalar ${val}`);
+// });
 // Setda ishlatilihsi
-let set = new Set("1 2 3 3 3 2 5");
-console.l;
+// let set = new Set("1 2 3 3 3 2 5");
+// console.l;
 
 // ============================================
 // map methodi
-let arr = [10, 20, 30, 40, 50];
-let x = arr.map(function (val, key) {
+// let arr = [10, 20, 30, 40, 50];
+// let x = arr.map(function (val, key) {
+//   return val * 10;
+// });
+// console.log(x);
+
+// convert dollor to sum
+// let dollor = [100, 200, 150, 300];
+// let dollorToUzb = 10900;
+// let uzb = dollor.map(function (val) {
+//   return val * dollorToUzb;
+// });
+// console.log(uzb);
+
+// --------------------------------------
+// Filterga misol
+// let dollor = [100, 200, 150, 300];
+// // let dollorToUzb = 10900;
+// let uzb = dollor.filter(function (val) {
+//   return val > 150;
+// });
+// console.log(uzb);
+
+// --------------------------------------------------------
+// let botirovPay = {
+//   name: "Valisher Botirov",
+//   balance: 2000,
+//   transaction: [],
+//   pin: 1218,
+// };
+
+// let umidPay = {
+//   name: "Umid Rustamon",
+//   balance: 3000,
+//   transaction: [],
+//   pin: 1228,
+// };
+
+// ================================================
+// bir martalik fungsiya
+// (function () {
+//   console.log("Hello world");
+// })();
+
+// slice methodi
+// let arr = ["V", "a", "l", "i", "sh", "e", "r"];
+// console.log(arr.slice(-3));
+// console.log(arr.slice(0, 3));
+// console.log(arr);
+
+// splice methodi
+// let arr = ["V", "a", "l", "i", "sh", "e", "r"];
+// console.log(arr.splice(3));
+// console.log(arr);
+
+// reverce methodi
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(arr.reverse());
+// console.log(arr);
+
+// concat methodi
+// let arr1 = [1, 2, 3];
+// let arr2 = [6, 5, 4];
+// console.log(arr1.concat(arr2));
+
+// join metodi
+// let arr = ["v", "a"];
+// console.log(arr.join(""));
+
+// at methodi
+// let arr = ["Valisher", "Botirov"];
+// console.log(arr.at());
+
+// forEach loopi
+// let arr = [1, 5, 9, -10, -12, 54];
+// arr.forEach(function (key, val, arr) {
+//   if (key < 0) {
+//     console.log(key);
+//   }
+// });
+// mapga ishlatish
+// let str = new Map([
+//   ["name", "Valisher"],
+//   ["surname", "Botirov"],
+//   ["age", 20],
+//   ["job", "Developer"],
+// ]);
+
+// str.forEach((key, val, arr) => {
+//   if (typeof key == "number") {
+//     console.log(key);
+//   }
+// });
+
+// let mySet = new Set("name", "name", "surname", "tuit", 20, 2002);
+// mySet.forEach(function (key, val, set) {
+//   if (typeof key == "number") {
+//     console.log(key);
+//   }
+// });
+
+// ----------------------------------------
+// map metodi
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let map = arr.map(function (val) {
   return val * 10;
 });
-console.log(x);
-// --------------------------------------------------------
-let botirovPay = {
-  name: "Valisher Botirov",
-  balance: 2000,
-  transaction: [],
-  pin: 1218,
-};
+console.log(map);
 
-let umidPay = {
-  name: "Umid Rustamon",
-  balance: 3000,
-  transaction: [],
-  pin: 1228,
-};
+let filter = arr.filter(function (val) {
+  return val > 5;
+});
+console.log(filter);
+
+let newMap = [
+  ["name", "Valisher"],
+  ["age", 20],
+  ["birtYear", 2002],
+  ["city", "Tashknet"],
+];
+
+let cv = newMap.map(function (key, val) {
+  return val;
+});
+console.log(cv);
