@@ -1014,12 +1014,12 @@ document.getElementById("btn").addEventListener("click", function () {
 // console.log(x);
 
 // array elemtlaridan kattasini aniqlash
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let x = arr.reduce(function (katta, val) {
-  if (katta < val) return val;
-  else return katta;
-}, arr[0]);
-console.log(x);
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let x = arr.reduce(function (katta, val) {
+//   if (katta < val) return val;
+//   else return katta;
+// }, arr[0]);
+// console.log(x);
 // let arrNew = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // let max;
 // max = arrNew[0];
@@ -1029,3 +1029,25 @@ console.log(x);
 //   }
 // }
 // console.log(max);
+
+let me = {
+  name: "Valisher",
+  age: 20,
+};
+
+let me2 = {
+  name: "Bobosher",
+  age: 20,
+};
+
+let me3 = {
+  name: "Valisher",
+  age: 20,
+};
+
+const arr = [me, me2, me3];
+let x = arr.find(function (val) {
+  return val.name === "Valisher";
+});
+
+console.log(x);
