@@ -1030,24 +1030,257 @@ document.getElementById("btn").addEventListener("click", function () {
 // }
 // console.log(max);
 
-let me = {
-  name: "Valisher",
-  age: 20,
-};
+// let me = {
+//   name: "Alisher",
+//   age: 20,
+// };
 
-let me2 = {
-  name: "Bobosher",
-  age: 20,
-};
+// let me2 = {
+//   name: "Bobosher",
+//   age: 20,
+// };
 
-let me3 = {
-  name: "Valisher",
-  age: 20,
-};
+// let me3 = {
+//   name: "Valisher",
+//   age: 20,
+// };
 
-const arr = [me, me2, me3];
-let x = arr.find(function (val) {
-  return val.name === "Valisher";
+// const arr = [me, me2, me3];
+// let x = arr.findIndex(function (val) {
+//   return val.name === "Valisher";
+// });
+
+// console.log(x);
+
+// ============================================
+// Chaining Methods
+// let arr = [1, 2, 3, 4, 5];
+// let obshi = arr
+//   .filter((val) => {
+//     return val > 2;
+//   })
+//   .map(function (val) {
+//     return val * 2;
+//   })
+//   .reduce(function (sum, val) {
+//     return sum + val;
+//   }, 0);
+// console.log(obshi);
+
+// some va every metodlar
+
+// let arr = [1, 2, 0, 6];
+// let bor = arr.some(function (val) {
+//   return val < 1;
+// });
+// console.log(bor);
+
+// let yoq = arr.every((val) => val > 1);
+// console.log(yoq);
+
+// flat and flatMap methods
+// let arr = [1, [2, 3, [5, 4, [1]]], 5, [6]];
+// let y = arr.flat(3);
+// console.log(y);
+
+// let arr = [1, [2, 3, [5, 4, [1]]], 5, [6]];
+// let arr2 = [1, [2, 3, [5, 4, [1]]], 5, [6]];
+// let arr3 = [1, [2, 3, [5, 4, [1]]], 5, [6]];
+
+// let newArr = [arr, arr2, arr3];
+
+// let x = newArr.flatMap(function (val) {
+//   return val;
+// });
+
+// console.log(x);
+
+// let obj1 = {
+//   name: "Umid",
+//   arrObj: [1, 2, 3, [4, 5]],
+// };
+// let obj2 = {
+//   name: "Umid",
+//   arrObj: [1, 2, 3, [1, 7]],
+// };
+// let obj3 = {
+//   name: "Umid",
+//   arrObj: [1, 2, 3, [4, 5]],
+// };
+
+// let arr = [obj1, obj2, obj3];
+// let mixArr = arr.flatMap(function (val) {
+//   return val.arrObj;
+// });
+
+// console.log(arr);
+
+// let litter = ["a", "n", "c", "f", "m"];
+// console.log(litter.sort());
+// =====================================================
+// o'zim yechmoqchi bo'lgan usul
+// let input = "fhkasfmagsadidadsacsadjsodaft";
+// let array = input.split("");
+
+// let m = array.indexOf("m");
+// let a = array.indexOf("a");
+// let g = array.indexOf("g");
+// let i = array.indexOf("i");
+// let c = array.indexOf("c");
+// let s = array.indexOf("s");
+// let o = array.indexOf("o");
+// let f = array.indexOf("f");
+// let t = array.indexOf("t");
+
+// let mArr = [];
+// let mHarfi = [];
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] == "m" || array[i] == "a") {
+//     mHarfi.push(array[i]);
+//     mArr.push(array.splice(0, m + 1));
+//   }
+// }
+
+// console.log(array);
+// console.log(mArr);
+// console.log(mHarfi);
+
+// let arr = [];
+// for (let i = 0; i < input.length; i++) {
+//   if (
+//     input[i] == "m" ||
+//     input[i] == "a" ||
+//     input[i] == "g" ||
+//     input[i] == "i" ||
+//     input[i] == "c" ||
+//     input[i] == "s" ||
+//     input[i] == "o" ||
+//     input[i] == "f" ||
+//     input[i] == "t"
+//   ) {
+//     arr.push(input[i]);
+//   }
+// }
+// let set = new Set(arr);
+// let newArr = [...set];
+// console.log(newArr);
+// let m = newArr.indexOf("m");
+// let a = newArr.indexOf("a");
+// let g = newArr.indexOf("g");
+// let i = newArr.indexOf("i");
+// let c = newArr.indexOf("c");
+// let s = newArr.indexOf("s");
+// let o = newArr.indexOf("o");
+// let f = newArr.indexOf("f");
+// let t = newArr.indexOf("t");
+
+// if (m > a && a > g && g > i && i > c && c > s && s > o && o > f && f > t) {
+//   console.log("topdim");
+// } else console.log("topolmadim");
+
+// =================================================
+// Anvarni usuli
+// let input = "fhkasfmagsadidadsacsadjsodaft";
+// let key = "magicsoft";
+// let j = 0;
+// for (let i = 0; i < input.length; i++) {
+//   if (input[i] == key[j]) {
+//     j++;
+//   }
+// }
+// if (j == 9) console.log("topdim");
+// else console.log("topolmadim");
+// // console.log(key[j]);
+// ========================================
+
+// let obj1 = {
+//   name: "Valisher",
+//   age: 20,
+// };
+// let obj2 = {
+//   name: "Diyor",
+//   age: 20,
+// };
+// let obj3 = {
+//   name: "Jamil",
+//   age: 20,
+// };
+// let obj4 = {
+//   name: "Alex",
+//   age: 20,
+// };
+
+// let arr = [obj1, obj2, obj3, obj4];
+
+// let x = arr.findIndex((val) => val.name == "Alex");
+// console.log(arr.splice(3));
+// console.log(arr);
+// console.log(x);
+
+// Baxtli sondi topish
+// ================================================
+// ===============================================
+// let son = 4447474444477777;
+// son = String(son);
+// let arr = [];
+// for (let i = 0; i < son.length; i++) {
+//   if (son[i] == 4 || son[i] == 7) {
+//     arr.push(son[i]);
+//   }
+// }
+// if (arr.length == son.length) {
+//   console.log("Baxtli son");
+// } else console.log("Bxtli emas");
+// console.log(son.length);
+// console.log(arr.length);
+// ===============================================
+// ===============================================
+
+// let son = 56;
+// for (let i = 0; i < son; i++) {
+//   let xona = [i];
+//   for (let j = 0; j < xona; j++) {
+//     if (xona[j] == 4 || xona[j] == 7) {
+//       console.log(xona);
+//     }
+//   }
+// }
+
+// let arr = [4, 7];
+// let str = String(47);
+
+// ========================================================
+// =========================================================
+
+// let arr = [3, 2, 1, 6, 5, 4];
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > arr[i + 1]) {
+//     [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+//   }
+//   console.log(arr[i]);
+// }
+
+// let str = "bsamndjk";
+// let arr = [];
+// for (let i = 0; i < str.length; i++) {
+//   if (str.charCodeAt(i) > str.charCodeAt(i + 1)) {
+//     [str[i], str[i + 1]] = [str[i + 1], str[i]];
+//   }
+//   arr.push(str[i]);
+// }
+// console.log(arr);
+
+// let nbr = "1";
+// console.log(nbr.charCodeAt());
+// console.log(String.fromCharCode(49));
+
+let x = [1, 233333, 6, 8, 3, 5];
+x.sort((a, b) => {
+  if (a > b) {
+    return 1;
+  } else return -1;
 });
-
 console.log(x);
+
+console.log(x.sort());
