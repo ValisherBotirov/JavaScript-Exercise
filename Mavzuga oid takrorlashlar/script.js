@@ -1275,12 +1275,28 @@ document.getElementById("btn").addEventListener("click", function () {
 // console.log(nbr.charCodeAt());
 // console.log(String.fromCharCode(49));
 
-let x = [1, 233333, 6, 8, 3, 5];
-x.sort((a, b) => {
-  if (a > b) {
-    return 1;
-  } else return -1;
-});
-console.log(x);
+// let x = [1, 233333, 6, 8, 3, 5];
+// x.sort((a, b) => {
+//   if (a > b) {
+//     return 1;
+//   } else return -1;
+// });
+// console.log(x);
 
-console.log(x.sort());
+// console.log(x.sort());
+
+// let str = "valisher";
+// let arr = ["valisher", "bo"];
+// console.log(str.charCodeAt());
+// console.log(String.fromCharCode(118));
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let x = arr.every(function (val) {
+//   return val > 3;
+// });
+// console.log(x);
+let html = `<li class="item">Salom</li>`;
+for (let i = 0; i < 20; i++) {
+  document.querySelector(".link").insertAdjacentHTML("beforeend", html);
+}
+document.querySelector(".link").innerHTML = " ";
