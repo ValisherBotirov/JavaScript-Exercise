@@ -1295,8 +1295,66 @@ document.getElementById("btn").addEventListener("click", function () {
 //   return val > 3;
 // });
 // console.log(x);
-let html = `<li class="item">Salom</li>`;
-for (let i = 0; i < 20; i++) {
-  document.querySelector(".link").insertAdjacentHTML("beforeend", html);
-}
-document.querySelector(".link").innerHTML = " ";
+// let html = `<li class="item">Salom</li>`;
+// for (let i = 0; i < 20; i++) {
+//   document.querySelector(".link").insertAdjacentHTML("beforeend", html);
+// }
+// document.querySelector(".link").innerHTML = " ";
+// =============================================
+
+// fill and from methods
+// let x = new Array(10);
+// x.fill(5, 2, 8); //(value,start,end)
+// console.log(x);
+
+// from metodi
+// let y = Array.from({ length: 50 }, function (val, key) {
+//   return (key + 1) * 2;
+// });
+// console.log(y);
+
+// let a = Array.from([1, -5, 4, -2, -3, 8], function (val) {
+//   if (val > 0) {
+//     return val * 2;
+//   }
+// });
+// console.log(a);
+
+// tub son masalasi
+// let z = 5;
+// let count = 0;
+// for (let i = 2; i <= z; i++) {
+//   for (let j = 2; j <= i; j++) {
+//     if (i % j == 0) {
+//       count++;
+//     }
+//   }
+// }
+// console.log(count);
+// if (count == 2) {
+//   console.log("tub son");
+// } else console.log("tub son emas");
+
+// let v = Array.from({ length: 10 }, (val, key) => key + 1);
+// console.log(v);
+
+// toFixed
+// let x = 1.249;
+// let y = x.toFixed(2);
+// console.log(typeof y);
+
+// let x = "12";
+// x = +x;
+// console.log(typeof x, x);
+
+// let str = "bnchmf";
+// let alf = "abcdefghijklmnopqrstuvwxyz";
+// let arr = [];
+// for (let i = 0; i < str.length; i++) {
+//   let x = alf.indexOf(str[i]);
+//   arr.push(alf[x + 1]);
+// }
+// let rusult = arr.join("");
+// console.log(rusult);
+
+// Sizga string ko'rinishida harflar ketma-ketligi beriladi.Sizning vazifangiz bu harflar ketma-ketligini ingiliz alifbosida bitta keyin kelgan harf bilan alishtirib to'g'ri so'zni hosil qilib berishingiz kerak.Masalan "bnchmf" kelsa "coding" so'zini qaytarish kerak
