@@ -1320,21 +1320,6 @@ document.getElementById("btn").addEventListener("click", function () {
 // });
 // console.log(a);
 
-// tub son masalasi
-// let z = 5;
-// let count = 0;
-// for (let i = 2; i <= z; i++) {
-//   for (let j = 2; j <= i; j++) {
-//     if (i % j == 0) {
-//       count++;
-//     }
-//   }
-// }
-// console.log(count);
-// if (count == 2) {
-//   console.log("tub son");
-// } else console.log("tub son emas");
-
 // let v = Array.from({ length: 10 }, (val, key) => key + 1);
 // console.log(v);
 
@@ -1346,15 +1331,3 @@ document.getElementById("btn").addEventListener("click", function () {
 // let x = "12";
 // x = +x;
 // console.log(typeof x, x);
-
-// let str = "bnchmf";
-// let alf = "abcdefghijklmnopqrstuvwxyz";
-// let arr = [];
-// for (let i = 0; i < str.length; i++) {
-//   let x = alf.indexOf(str[i]);
-//   arr.push(alf[x + 1]);
-// }
-// let rusult = arr.join("");
-// console.log(rusult);
-
-// Sizga string ko'rinishida harflar ketma-ketligi beriladi.Sizning vazifangiz bu harflar ketma-ketligini ingiliz alifbosida bitta keyin kelgan harf bilan alishtirib to'g'ri so'zni hosil qilib berishingiz kerak.Masalan "bnchmf" kelsa "coding" so'zini qaytarish kerak

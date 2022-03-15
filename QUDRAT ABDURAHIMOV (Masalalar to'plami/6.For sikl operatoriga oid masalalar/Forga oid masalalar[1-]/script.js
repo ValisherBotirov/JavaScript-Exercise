@@ -69,4 +69,56 @@
 // }
 // for (let i = -1.2; i <= -(n / 2); i = i - 0.2) {
 //   console.log(i);
+// }
+
+// 14-masala
+// let sum = 0;
+// let n = 7;
+// for (let i = 1; i <= 2 * n - 1; i = i + 2) {
+//   sum = sum + i;
+// }
+// console.log(`${n} sonining kvadrati ${sum}`);
+
+//15-masala
+// let a = 3,
+//   n = 4;
+// let x = a;
+// for (let i = 1; i < n; i++) {
+//   x = x * a;
+// }
+// console.log(x);
+
+// 16-masala
+// let n = 4,
+//   a = 2;
+// for (let i = 1; i <= n; i++) {
+//   console.log(a ** i);
+// }
+
+// 17-masala
+// let n = 4,
+//   a = 2;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   sum = sum + a ** i;
+// }
+// console.log(sum);
+
+// 18-masala
+// let n = 4,
+//   a = 2;
+// let sum = 0;
+// for (let i = 0; i <= n; i++) {
+//   sum = sum + (-1) ** i * a ** i;
+// }
+// console.log(sum);
+
+// 19-masala Faktorial
+let n = 2;
+let x = 1;
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+  x = x * i;
+  console.log(`${i}! => ${x}`);
 }
+console.log(x);
