@@ -1331,3 +1331,143 @@ document.getElementById("btn").addEventListener("click", function () {
 // let x = "12";
 // x = +x;
 // console.log(typeof x, x);
+
+// Number.isNan metodi
+// let x = "24.7px";
+// let c;
+// c = Number(parseFloat(x));
+// console.log(c);
+
+// x = "m24px";
+// c = Number(parseInt(x));
+// console.log(c);
+
+// let n = Number.isNaN(Number.parseFloat(x));
+// console.log(n);
+
+// console.log(Number.isFinite(12 / 0));
+
+// console.log(Math.sqrt(25));
+// let arr = [];
+
+// for (let i = 0; i < 10; i++) {
+//   let c = Math.trunc(Math.random() * 200) - 100;
+//   arr.push(c);
+// }
+// console.log(arr);
+
+// function random(a, b) {
+//   return Math.trunc(Math.random() * (b - a + 1) + a);
+// }
+
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+//   arr.push(random(-10, 10));
+// }
+// console.log(arr);
+
+// console.log(Math.trunc(-2.6));
+// console.log(Math.round(-2.8));
+// console.log(Math.floor(-2.8));
+
+// let son = 45;
+// let birlik;
+// let unlik;
+// birlik = son % 10;
+// unlik = Math.trunc(son / 10);
+// let arr = [];
+// // console.log(unlik, birlik);
+// switch (unlik) {
+//   case 1:
+//     arr.push("o'n");
+//     break;
+//   case 2:
+//     arr.push("yigirma");
+//     break;
+//   case 3:
+//     arr.push("o'ttiz");
+//     break;
+//   case 4:
+//     arr.push("qirq");
+//     break;
+//   case 5:
+//     arr.push("ellik");
+//     break;
+//   case 6:
+//     arr.push("oltmish");
+//     break;
+//   case 7:
+//     arr.push("yetmish");
+//     break;
+//   case 8:
+//     arr.push("sakson");
+//     break;
+//   case 9:
+//     arr.push("to'qson");
+//     break;
+// }
+// switch (birlik) {
+//   case 1:
+//     arr.push("bir");
+//     break;
+//   case 2:
+//     arr.push("ikki");
+//     break;
+//   case 3:
+//     arr.push("uch");
+//     break;
+//   case 4:
+//     arr.push("to'rt");
+//     break;
+//   case 5:
+//     arr.push("besh");
+//     break;
+//   case 6:
+//     arr.push("olti");
+//     break;
+//   case 7:
+//     arr.push("yetti");
+//     break;
+//   case 8:
+//     arr.push("sakkiz");
+//     break;
+//   case 9:
+//     arr.push("to'qqiz");
+//     break;
+// }
+// console.log(...arr);
+// let b = 15;
+// console.log(b.toString(2));
+// let big = Number.MAX_SAFE_INTEGER;
+// console.log(big);
+// console.log(2 ** 53);
+
+// console.log(2n + BigInt(10));
+// // Date bilan ishlash
+// let hozir = new Date();
+// console.log(hozir);
+
+// let kecha = new Date(2022, 2, 14);
+// console.log(kecha);
+
+// // console.log(new Date(`March , 13 , 2022`));
+
+// let yil = hozir.getFullYear();
+// console.log(yil);
+// let oy = hozir.getMonth();
+// console.log(oy);
+
+// let qoida = hozir.toISOString();
+// console.log(qoida);
+
+// let xozir = new Date().getTime();
+// let son = 5 * 365 * 24 * 60 * 60 * 100;
+// // let nowYear = new Date(5 * 365 * 24 * 60 * 60 * 100);
+// console.log(xozir);
+// let kelasiYil = x + son;
+// let kun = new Date(kelasiYil.getDay(kelasiYil));
+// console.log(kun);
+
+let a = new Date();
+a.setDate(2040);
+console.log(a);
