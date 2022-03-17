@@ -1468,6 +1468,127 @@ document.getElementById("btn").addEventListener("click", function () {
 // let kun = new Date(kelasiYil.getDay(kelasiYil));
 // console.log(kun);
 
-let a = new Date();
-a.setDate(2040);
-console.log(a);
+// Amaliy mashg'ulotcha
+// let birinchiSana = prompt("1-sanani kiriting (04/03/2022)");
+// let ikkinchiSana = prompt("2-sanani kiriting (04/03/2024)");
+// birinchiSana = birinchiSana.split("/").reverse();
+// ikkinchiSana = ikkinchiSana.split("/").reverse();
+// let time1 = new Date(...birinchiSana).getTime();
+// let time2 = new Date(...ikkinchiSana).getTime();
+// let farq = time2 - time1;
+// let yil = Math.trunc(farq / (1000 * 60 * 60 * 24 * 12 * 365));
+// let oy = Math.trunc(farq / (1000 * 60 * 60 * 24 * 12));
+// let kun = Math.trunc(farq / (1000 * 60 * 60 * 24));
+
+// console.log(`${yil} yil , ${oy} oy , ${kun} kun ortiq`);
+
+// Xalqaro soatlar bilan ishlash
+// let hozirInternational = new Date();
+// let options = {
+//   day: "numeric",
+//   month: "numeric",
+//   weekday: "long",
+//   year: "numeric",
+//   minute: "numeric",
+// };
+
+// let uzb = new Intl.DateTimeFormat("ru-RU", options).format(hozirInternational);
+// console.log(uzb);
+
+// let hozirInternational = new Date();
+// let options = {
+//   day: "numeric",
+//   month: "numeric",
+//   weekday: "long",
+//   year: "numeric",
+//   minute: "numeric",
+// };
+
+// let davlat = navigator.language;
+// console.log(davlat);
+
+// let uzb = new Intl.DateTimeFormat(davlat, options).format(hozirInternational);
+// console.log(uzb);
+
+// let sozlanma = {
+//   style : "decimal"
+// }
+
+// setTimeOut functions and setInterval
+// a = Number(prompt("a ni kiriting"));
+// b = Number(prompt("b ni kiriting"));
+// setTimeout(
+//   function (a, b) {
+//     console.log(a + b);
+//   },
+//   3000,
+//   a,
+//   b
+// );
+
+// a = Number(prompt("Yoshingizni kiriting"));
+
+// let t = setTimeout(
+//   function (a) {
+//     console.log(a);
+//   },
+//   3000,
+//   a
+// );
+
+// if (a > 18) {
+//   clearTimeout(t);
+// }
+
+// setInterval(function () {
+//   console.log("salom");
+// }, 2000);
+
+// let x = 60;
+// setInterval(function () {
+//   --x;
+//   if (x == 0) {
+//     x = 60;
+//   }
+//   console.log(x);
+// }, 100);
+
+// let minut = 5;
+// let sekund = 59;
+
+// let x = setInterval(function () {
+//   sekund--;
+//   if (sekund == 0) {
+//     sekund = 59;
+//     minut--;
+//   }
+//   if (minut == -1 && sekund == 00) {
+//     clearInterval(x);
+//   }
+//   console.log(`${minut} : ${String(sekund).padStart(2, "0")}`);
+// }, 5);
+
+let time = new Date();
+let options = {
+  day: "numeric",
+  month: "numeric",
+  year: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+  weekday: "long",
+};
+let til = new Intl.DateTimeFormat("en-US", options).format(time);
+console.log(til);
+
+let a = 12515463456.32;
+let sozlama = {
+  style: "decimal",
+  style: "currency",
+  currency: "USD",
+
+  style: "unit",
+  unit: "celsius",
+};
+let conver = new Intl.NumberFormat("en-US", sozlama).format(a);
+console.log(conver);
