@@ -1568,27 +1568,62 @@ document.getElementById("btn").addEventListener("click", function () {
 //   console.log(`${minut} : ${String(sekund).padStart(2, "0")}`);
 // }, 5);
 
-let time = new Date();
-let options = {
-  day: "numeric",
-  month: "numeric",
-  year: "numeric",
-  hour: "numeric",
-  minute: "numeric",
-  second: "numeric",
-  weekday: "long",
-};
-let til = new Intl.DateTimeFormat("en-US", options).format(time);
-console.log(til);
+// let time = new Date();
+// let options = {
+//   day: "numeric",
+//   month: "numeric",
+//   year: "numeric",
+//   hour: "numeric",
+//   minute: "numeric",
+//   second: "numeric",
+//   weekday: "long",
+// };
+// let til = new Intl.DateTimeFormat("en-US", options).format(time);
+// console.log(til);
 
-let a = 12515463456.32;
-let sozlama = {
-  style: "decimal",
-  style: "currency",
-  currency: "USD",
+// let a = 12515463456.32;
+// let sozlama = {
+//   style: "decimal",
+//   style: "currency",
+//   currency: "USD",
 
-  style: "unit",
-  unit: "celsius",
-};
-let conver = new Intl.NumberFormat("en-US", sozlama).format(a);
-console.log(conver);
+//   style: "unit",
+//   unit: "celsius",
+// };
+// let conver = new Intl.NumberFormat("en-US", sozlama).format(a);
+// console.log(conver);
+
+let a = 5;
+let b = 5;
+let m = 4;
+let n = 6;
+let maxKatta, minKatta, maxKichik, minKichik;
+if (a >= b) {
+  maxKatta = a;
+  minKatta = b;
+} else {
+  maxKatta = b;
+  minKatta = a;
+}
+if (m >= n) {
+  minKichik = m;
+  minKichik = n;
+} else {
+  maxKichik = n;
+  minKichik = m;
+}
+
+if (
+  maxKatta * minKatta > maxKichik * minKichik &&
+  maxKatta > maxKichik &&
+  minKatta > minKichik
+) {
+  console.log(maxKatta * minKatta - maxKichik * minKichik);
+} else if (
+  maxKatta * minKatta > maxKichik * minKichik &&
+  (maxKatta < maxKichik || minKatta < minKichik)
+) {
+  console.log(a * b);
+} else if (a * b == m * n) {
+  console.log(0);
+}
