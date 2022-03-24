@@ -1593,37 +1593,151 @@ document.getElementById("btn").addEventListener("click", function () {
 // let conver = new Intl.NumberFormat("en-US", sozlama).format(a);
 // console.log(conver);
 
-let a = 5;
-let b = 5;
-let m = 4;
-let n = 6;
-let maxKatta, minKatta, maxKichik, minKichik;
-if (a >= b) {
-  maxKatta = a;
-  minKatta = b;
-} else {
-  maxKatta = b;
-  minKatta = a;
-}
-if (m >= n) {
-  minKichik = m;
-  minKichik = n;
-} else {
-  maxKichik = n;
-  minKichik = m;
-}
+// let a = 5;
+// let b = 5;
+// let m = 4;
+// let n = 6;
+// let maxKatta, minKatta, maxKichik, minKichik;
+// if (a >= b) {
+//   maxKatta = a;
+//   minKatta = b;
+// } else {
+//   maxKatta = b;
+//   minKatta = a;
+// }
+// if (m >= n) {
+//   minKichik = m;
+//   minKichik = n;
+// } else {
+//   maxKichik = n;
+//   minKichik = m;
+// }
 
-if (
-  maxKatta * minKatta > maxKichik * minKichik &&
-  maxKatta > maxKichik &&
-  minKatta > minKichik
-) {
-  console.log(maxKatta * minKatta - maxKichik * minKichik);
-} else if (
-  maxKatta * minKatta > maxKichik * minKichik &&
-  (maxKatta < maxKichik || minKatta < minKichik)
-) {
-  console.log(a * b);
-} else if (a * b == m * n) {
-  console.log(0);
-}
+// if (
+//   maxKatta * minKatta > maxKichik * minKichik &&
+//   maxKatta > maxKichik &&
+//   minKatta > minKichik
+// ) {
+//   console.log(maxKatta * minKatta - maxKichik * minKichik);
+// } else if (
+//   maxKatta * minKatta > maxKichik * minKichik &&
+//   (maxKatta < maxKichik || minKatta < minKichik)
+// ) {
+//   console.log(a * b);
+// } else if (a * b == m * n) {
+//   console.log(0);
+// }
+
+// const Umid = function (name, age) {
+//   this.name = name;
+//   this.age = age;
+// };
+
+// const umid = new Umid("Valisher", 20);
+// console.log(umid);
+
+// Umid.prototype.birthYear = function () {
+//   console.log(2022 - this.age);
+// };
+// umid.birthYear(1996);
+
+// construktor fungsiya
+// moshina konstruktor fungsiyasi
+
+// const Car = function (rangi, nomi, narxi) {
+//   this.rangi = rangi;
+//   this.nomi = nomi;
+//   this.narxi = narxi;
+// };
+
+// Car.prototype.cost = function () {
+//   return this.narxi + 200;
+// };
+// let malibo = new Car("qora", "Malibo Turbo", 15000);
+// console.log(malibo.cost());
+
+// let gentra = new Car("oq", "Gentra", 9000);
+// console.log(gentra);
+
+// class declaration
+// class Student {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   birthYear() {
+//     return 2022 - this.age;
+//   }
+// }
+
+// let valisher = new Student("Valisher", 20);
+// let aziz = new Student("Aziz", 19);
+// console.log(valisher);
+// console.log(aziz);
+// console.log(valisher.birthYear());
+
+// bankistni OOP bn qilish
+// Сlass
+
+// class Bankist {
+//   #pin;
+//   constructor(name, age, pin) {
+//     this.name = name;
+//     this.age = age;
+//     this.#pin = pin;
+//     this.til = navigator.language;
+//     this.utkazmalar = [];
+//   }
+
+//   set pulOlish(val) {
+//     return this.utkazmalar.push(val);
+//   }
+//   set pulUtkazish(val) {
+//     return this.utkazmalar.push(-val);
+//   }
+
+//   get totalSumma() {
+//     return this.utkazmalar.reduce(function (sum, val) {
+//       return sum + val;
+//     }, 0);
+//   }
+
+//   // get qarzOlish(qarz){
+//   //   // if(qarz < this.totalSumma*0.1){
+//   //   //   return
+//   //   // }
+//   // }
+//   set pinniUzgartirish(val) {
+//     return (this.#pin = val);
+//   }
+
+//   get pinOlish() {
+//     return this.#pin;
+//   }
+// }
+
+// let person = new Bankist("Valisher", 20, 1111);
+
+// person.pulOlish = 800;
+// person.pulOlish = 300;
+// person.pulUtkazish = 500;
+// person.pulUtkazish = 300;
+// person.pinniUzgartirish = 5555;
+// console.log(person);
+// console.log(person.pinOlish);
+// console.log(person.totalSumma);
+
+// Object create
+const Phone = {
+  init(name, price) {
+    this.name = name;
+    this.price = price;
+  },
+};
+
+let phone1 = Object.create(Phone);
+phone1.name = "iPhone";
+phone1.price = 12000;
+
+console.log(phone1);

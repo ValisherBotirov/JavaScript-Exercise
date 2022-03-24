@@ -114,11 +114,21 @@
 // console.log(sum);
 
 // 19-masala Faktorial
-let n = 2;
-let x = 1;
+// let n = 2;
+// let x = 1;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   x = x * i;
+//   console.log(`${i}! => ${x}`);
+// }
+// console.log(x);
+
+// 20-masala
+let n = 3;
 let sum = 0;
 for (let i = 1; i <= n; i++) {
-  x = x * i;
-  console.log(`${i}! => ${x}`);
+  for (let j = 1; j <= i; j++) {
+    sum = sum + i * j;
+  }
 }
-console.log(x);
+console.log(sum);
