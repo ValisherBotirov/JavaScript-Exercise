@@ -1729,15 +1729,57 @@ document.getElementById("btn").addEventListener("click", function () {
 // console.log(person.totalSumma);
 
 // Object create
-const Phone = {
-  init(name, price) {
-    this.name = name;
-    this.price = price;
-  },
-};
+// const Phone = {
+//   init(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   },
+// };
 
-let phone1 = Object.create(Phone);
-phone1.name = "iPhone";
-phone1.price = 12000;
+// let phone1 = Object.create(Phone);
+// phone1.name = "iPhone";
+// phone1.price = 12000;
 
-console.log(phone1);
+// console.log(phone1);
+
+// // -----------elektron soat yasash-----------------------------
+// setInterval(function () {
+//   let time = new Date();
+//   let options = {
+//     hour: "numeric",
+//     minute: "numeric",
+//     second: "numeric",
+//   };
+
+//   let soat = new Intl.DateTimeFormat("ru-RU", options).format(time);
+//   console.log(soat);
+// }, 1000);
+
+// ================================================
+// O'tilgan mavzularga oid takrorlash
+// let str = "valisher";
+// let newArr = [...str];
+// let x = [...newArr];
+// console.log(x);
+
+// fungsiya argumentiga spread operatoridan foydalanish
+// let muzqaymoq = function (a, b, c) {
+//   console.log(a, b, c);
+// };
+// let muz = [prompt("1-si"), prompt("2-si"), prompt("3-si")];
+// muzqaymoq(...muz);
+
+// const obj = {
+//   name: "Valisher",
+//   age: 20,
+//   job: "Developer",
+// };
+// const { name, ...yield } = obj;
+// console.log(name);
+// console.log(yield);
+
+let arr = ["a", "b", "c", "d"];
+for (let el of arr.entries()) {
+  console.log(`${el[0] + 1}-${el[1]}`);
+}
+// ============================================
