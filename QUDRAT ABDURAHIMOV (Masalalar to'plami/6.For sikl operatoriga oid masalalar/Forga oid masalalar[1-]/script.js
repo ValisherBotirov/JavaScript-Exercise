@@ -270,3 +270,23 @@
 // }
 
 // console.log(sum);
+
+let a = 379;
+a = String(a);
+let map = new Map([
+  [0, 6],
+  [1, 2],
+  [2, 5],
+  [3, 5],
+  [4, 4],
+  [5, 5],
+  [6, 6],
+  [7, 3],
+  [8, 7],
+  [9, 6],
+]);
+let sum = 0;
+for (let i = 0; i < a.length; i++) {
+  sum += map.get(Number(a[i]));
+}
+console.log(sum);

@@ -1874,37 +1874,57 @@ document.getElementById("btn").addEventListener("click", function () {
 // =========================================================
 
 // Public,protectic,privite
-class University {
-  #name;
-  constructor(name, soni) {
-    this.#name = name;
-    this.soni = soni;
-    this._pin = 1111;
-  }
-  #nameUzgar(val) {
-    this.#name = val;
+// class University {
+//   #name;
+//   constructor(name, soni) {
+//     this.#name = name;
+//     this.soni = soni;
+//     this._pin = 1111;
+//   }
+//   #nameUzgar(val) {
+//     this.#name = val;
+//   }
+
+//   nameUzgarQayta(val) {
+//     this.#nameUzgar(val);
+//   }
+//   _parolUzgar(val) {
+//     this._pin = val;
+//   }
+// }
+
+// let tatu = new University("TATU", 95000);
+// tatu._parolUzgar(2222);
+// console.log(tatu.nameUzgarQayta("TUIt"));
+// console.log(tatu);
+
+// class Fakultet extends University {
+//   constructor(name, soni, dekani) {
+//     super(name, soni);
+//     this.dekani = dekani;
+//   }
+// }
+
+// let kif = new Fakultet("DIF", 30000, "Ortiq Ro'ziboyev");
+// console.log(kif);
+// console.log(kif.name);
+
+// Chaining metgosd
+class Car {
+  constructor(name) {
+    this.name = name;
   }
 
-  nameUzgarQayta(val) {
-    this.#nameUzgar(val);
+  nomniUzgartit(val) {
+    this.name = val;
+    return this;
   }
-  _parolUzgar(val) {
-    this._pin = val;
+  nomniOl() {
+    console.log(this.name);
   }
 }
 
-let tatu = new University("TATU", 95000);
-tatu._parolUzgar(2222);
-console.log(tatu.nameUzgarQayta("TUIt"));
-console.log(tatu);
-
-class Fakultet extends University {
-  constructor(name, soni, dekani) {
-    super(name, soni);
-    this.dekani = dekani;
-  }
-}
-
-let kif = new Fakultet("DIF", 30000, "Ortiq Ro'ziboyev");
-console.log(kif);
-console.log(kif.name);
+let nexiya = new Car("Nexia");
+console.log(nexiya);
+nexiya.nomniUzgartit("Nexia-2").nomniOl();
+console.log(nexiya);
