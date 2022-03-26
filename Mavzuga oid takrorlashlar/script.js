@@ -1778,8 +1778,133 @@ document.getElementById("btn").addEventListener("click", function () {
 // console.log(name);
 // console.log(yield);
 
-let arr = ["a", "b", "c", "d"];
-for (let el of arr.entries()) {
-  console.log(`${el[0] + 1}-${el[1]}`);
-}
+// let arr = ["a", "b", "c", "d"];
+// for (let el of arr.entries()) {
+//   console.log(`${el[0] + 1}-${el[1]}`);
+// }
 // ============================================
+
+// voris olish construktor fungsiyalarda
+// Inheritance in construktor
+
+// const Person = function (name, age) {
+//   this.name = name;
+//   this.age = age;
+// };
+
+// Person.prototype.calcAge = function () {
+//   return 2022 - this.age;
+// };
+
+// const Teacher = function (name, age, fan, oylik) {
+//   Person.call(this, name, age);
+//   this.fan = fan;
+//   this.oylik = oylik;
+// };
+
+// Teacher.prototype = Object.create(Person.prototype);
+
+// Teacher.prototype.calcOylik = function () {
+//   return this.oylik * 3;
+// };
+
+// console.log(Teacher.prototype);
+
+// let teacher1 = new Teacher("Valisher", 30, "Dasturlash", 20000);
+// console.log(teacher1);
+// console.log(teacher1.calcAge());
+// console.log(teacher1.calcOylik());
+// -------------------------------------------
+// voris olish classlarda
+// Inheritance in class
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   calcAge() {
+//     return 2022 - this.age;
+//   }
+// }
+// class Talaba extends Person {
+//   constructor(name, age, fakultet) {
+//     super(name, age);
+//     this.fakultet = fakultet;
+//   }
+// }
+
+// let valisher = new Talaba("Valisher", 20, "DIF");
+// console.log(valisher);
+// console.log(valisher.calcAge());
+
+// ---------------------------------------
+// ==============================================================
+// voris olish obektlarda
+// Inheritance in object
+
+// const Person = {
+//   hisobla() {
+//     return 2022 - this.yosh;
+//   },
+
+//   qush(ism, yosh) {
+//     this.ism = ism;
+//     this.yosh = yosh;
+//     console.log(this.yosh);
+//   },
+// };
+
+// const Student = Object.create(Person);
+// Student.qush("Valisher", 20);
+// Student.qush = function (ism, yosh, fakulet) {
+//   Person.qush.call(this, ism, yosh);
+//   this.fakulet = fakulet;
+// };
+
+// const umid = Object.create(Student);
+
+// Student.tanish = function () {
+//   console.log(`I am ${this.ism}`);
+// };
+
+// umid.qush("Umid", 20, "AI");
+// console.log(umid);
+// console.log(umid.hisobla(20));
+// =========================================================
+
+// Public,protectic,privite
+class University {
+  #name;
+  constructor(name, soni) {
+    this.#name = name;
+    this.soni = soni;
+    this._pin = 1111;
+  }
+  #nameUzgar(val) {
+    this.#name = val;
+  }
+
+  nameUzgarQayta(val) {
+    this.#nameUzgar(val);
+  }
+  _parolUzgar(val) {
+    this._pin = val;
+  }
+}
+
+let tatu = new University("TATU", 95000);
+tatu._parolUzgar(2222);
+console.log(tatu.nameUzgarQayta("TUIt"));
+console.log(tatu);
+
+class Fakultet extends University {
+  constructor(name, soni, dekani) {
+    super(name, soni);
+    this.dekani = dekani;
+  }
+}
+
+let kif = new Fakultet("DIF", 30000, "Ortiq Ro'ziboyev");
+console.log(kif);
+console.log(kif.name);

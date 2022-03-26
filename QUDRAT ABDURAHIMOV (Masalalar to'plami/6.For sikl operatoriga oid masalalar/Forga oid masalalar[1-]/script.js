@@ -260,3 +260,13 @@
 //     console.log(i);
 //   }
 // }
+
+// for (let i = 0; i < array.length; i++) {
+//   const element = array[i];
+//   for (let j = 1; j < k + 1; j++) {
+//     element *= element;
+//   }
+//   sum += element;
+// }
+
+// console.log(sum);
