@@ -1910,21 +1910,120 @@ document.getElementById("btn").addEventListener("click", function () {
 // console.log(kif.name);
 
 // Chaining metgosd
-class Car {
-  constructor(name) {
+// class Car {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   nomniUzgartit(val) {
+//     this.name = val;
+//     return this;
+//   }
+//   nomniOl() {
+//     console.log(this.name);
+//   }
+// }
+
+// let nexiya = new Car("Nexia");
+// console.log(nexiya);
+// nexiya.nomniUzgartit("Nexia-2").nomniOl();
+// console.log(nexiya);
+
+// =======================================
+// OOP ga oid o'zomcha amaliyotcha
+
+// const Person = function (name, birthYear) {
+//   this.name = name;
+//   this.birthYear = birthYear;
+// };
+
+// Person.prototype.calcAge = function () {
+//   return 2022 - this.birthYear;
+// };
+
+// let me = new Person("Amin", 2003);
+// console.log(me);
+// console.log(me.calcAge());
+// // console.log(me.hasOwnProperty("birthYear"));
+// // console.log(Person.prototype.isPrototypeOf(me));
+
+// let Talaba = function (name, birthYear, surname, son) {
+//   Person.call(this, name, birthYear);
+//   this.surname = surname;
+//   this.son = son;
+// };
+// Talaba.prototype = Object.create(Person.prototype);
+
+// Talaba.prototype.add = function () {
+//   // return this.son + 10;
+//   return this.son + this.calcAge();
+// };
+
+// let you = new Talaba("Alex", 2002, "July", 50);
+// console.log(you);
+// console.log(you.calcAge());
+// console.log(you.add());
+
+// class orqali
+
+// class Person {
+//   #pin;
+//   constructor(name, age, pin) {
+//     this.name = name;
+//     this.age = age;
+//     this.#pin = 1111;
+//   }
+//   static footer() {
+//     return "This project create by Valisher Botirov";
+//   }
+//   get calcAge() {
+//     return 2022 - this.age;
+//   }
+//   // set changeAge(val) {
+//   //   this.age = val;
+//   // }
+//   changeAge(val) {
+//     this.age = val;
+//   }
+//   get pinOlish() {
+//     return this.#pin;
+//   }
+// }
+
+// let me = new Person("Alex", 22);
+// console.log(me);
+// console.log(me.calcAge);
+// // me.changeAge = 20; //setuchun
+// me.changeAge(20);
+// console.log(me);
+// console.log(me.calcAge);
+// console.log(me.pinOlish);
+
+// class Talaba extends Person {
+//   constructor(name, age, surname) {
+//     super(name, age);
+//     this.surname = surname;
+//   }
+// }
+
+// let you = new Talaba("Valisher", 20, "Botirov");
+// console.log(you);
+// console.log(Person.footer());
+
+// object create orqali
+
+const Person = {
+  init(name, age) {
     this.name = name;
-  }
+    this.age = age;
+  },
+  hisobla(x) {
+    return x - this.age;
+  },
+};
 
-  nomniUzgartit(val) {
-    this.name = val;
-    return this;
-  }
-  nomniOl() {
-    console.log(this.name);
-  }
-}
-
-let nexiya = new Car("Nexia");
-console.log(nexiya);
-nexiya.nomniUzgartit("Nexia-2").nomniOl();
-console.log(nexiya);
+let alex = Object.create(Person);
+alex.name = "Alex";
+alex.age = 20;
+console.log(alex);
+console.log(alex.hisobla(2020));
