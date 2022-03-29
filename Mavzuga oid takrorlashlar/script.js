@@ -2012,18 +2012,18 @@ document.getElementById("btn").addEventListener("click", function () {
 
 // object create orqali
 
-const Person = {
-  init(name, age) {
-    this.name = name;
-    this.age = age;
-  },
-  hisobla(x) {
-    return x - this.age;
-  },
-};
+// const Person = {
+//   init(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   },
+//   hisobla(x) {
+//     return x - this.age;
+//   },
+// };
 
-let alex = Object.create(Person);
-alex.name = "Alex";
-alex.age = 20;
-console.log(alex);
-console.log(alex.hisobla(2020));
+// let alex = Object.create(Person);
+// alex.name = "Alex";
+// alex.age = 20;
+// console.log(alex);
+// console.log(alex.hisobla(2020));

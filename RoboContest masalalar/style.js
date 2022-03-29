@@ -33,18 +33,56 @@
 // console.log(sum);
 
 // 139-masala
-let n = 10;
-let arr = [2432312133];
-console.log(arr);
-let bir = 0;
-let ikki = 0;
-let uch = 0;
-let turt = 0;
-let besh = 0;
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] == 1) bir++;
-  if (arr[i] == 2) ikki++;
-  if (arr[i] == 3) uch++;
-  if (arr[i] == 4) turt++;
-  if (arr[i] == 5) besh++;
+// let n = 10;
+// let arr = [2432312133];
+// console.log(arr);
+// let bir = 0;
+// let ikki = 0;
+// let uch = 0;
+// let turt = 0;
+// let besh = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] == 1) bir++;
+//   if (arr[i] == 2) ikki++;
+//   if (arr[i] == 3) uch++;
+//   if (arr[i] == 4) turt++;
+//   if (arr[i] == 5) besh++;
+// }
+
+// 3-masala
+let a = "12342132165451231544687456456123132";
+let b = "2621315646489746456465456";
+a = String(a);
+b = String(b);
+let arr1 = a.split("");
+let arr2 = b.split("");
+let minArr;
+let maxArr;
+if (arr1.length < arr2.length) {
+  minArr = arr1;
+  maxArr = arr2;
+} else {
+  minArr = arr2;
+  maxArr = arr1;
 }
+
+let arrFarq = Math.abs(arr1.length - arr2.length);
+
+for (let i = 0; i < arrFarq; i++) {
+  minArr.unshift("0");
+}
+
+let resultArr = [];
+let reverseArr1 = arr1.reverse();
+let reverseArr2 = arr2.reverse();
+let j = 0;
+for (let i = 0; i < maxArr.length; i++) {
+  resultArr.push(
+    String(((Number(reverseArr1[i]) + Number(reverseArr2[i])) % 10) + j)
+  );
+  j = 0;
+  j += Math.floor((Number(reerseArr1[i]) + Number(reverseArr2[i])) / 10);
+}
+
+let reverseResultArr = resultArr.reverse();
+console.log(reverseResultArr.join(""));
