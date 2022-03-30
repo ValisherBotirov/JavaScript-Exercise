@@ -50,39 +50,61 @@
 // }
 
 // 3-masala
-let a = "12342132165451231544687456456123132";
-let b = "2621315646489746456465456";
-a = String(a);
-b = String(b);
-let arr1 = a.split("");
-let arr2 = b.split("");
-let minArr;
-let maxArr;
-if (arr1.length < arr2.length) {
-  minArr = arr1;
-  maxArr = arr2;
-} else {
-  minArr = arr2;
-  maxArr = arr1;
+// let a = "12342132165451231544687456456123132";
+// let b = "2621315646489746456465456";
+// a = String(a);
+// b = String(b);
+// let arr1 = a.split("");
+// let arr2 = b.split("");
+// let minArr;
+// let maxArr;
+// if (arr1.length < arr2.length) {
+//   minArr = arr1;
+//   maxArr = arr2;
+// } else {
+//   minArr = arr2;
+//   maxArr = arr1;
+// }
+
+// let arrFarq = Math.abs(arr1.length - arr2.length);
+
+// for (let i = 0; i < arrFarq; i++) {
+//   minArr.unshift("0");
+// }
+
+// let resultArr = [];
+// let reverseArr1 = arr1.reverse();
+// let reverseArr2 = arr2.reverse();
+// let j = 0;
+// for (let i = 0; i < maxArr.length; i++) {
+//   resultArr.push(
+//     String(((Number(reverseArr1[i]) + Number(reverseArr2[i])) % 10) + j)
+//   );
+//   j = 0;
+//   j += Math.floor((Number(reerseArr1[i]) + Number(reverseArr2[i])) / 10);
+// }
+
+// let reverseResultArr = resultArr.reverse();
+// console.log(reverseResultArr.join(""));
+
+// 43-masala
+// let a = 1;
+// let b = 2;
+// let c;
+// c = a;
+// a = b;
+// b = c;
+// console.log(a, b);
+
+// 71-masala
+let n = 4;
+let count = 0;
+for (let i = 0; i <= n; i++) {
+  for (let j = 0; j <= n; j++) {
+    if (i + j == n) {
+      count++;
+    }
+    j = j + 1;
+  }
 }
-
-let arrFarq = Math.abs(arr1.length - arr2.length);
-
-for (let i = 0; i < arrFarq; i++) {
-  minArr.unshift("0");
-}
-
-let resultArr = [];
-let reverseArr1 = arr1.reverse();
-let reverseArr2 = arr2.reverse();
-let j = 0;
-for (let i = 0; i < maxArr.length; i++) {
-  resultArr.push(
-    String(((Number(reverseArr1[i]) + Number(reverseArr2[i])) % 10) + j)
-  );
-  j = 0;
-  j += Math.floor((Number(reerseArr1[i]) + Number(reverseArr2[i])) / 10);
-}
-
-let reverseResultArr = resultArr.reverse();
-console.log(reverseResultArr.join(""));
+console.log(count);
