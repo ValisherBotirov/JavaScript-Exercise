@@ -2027,3 +2027,17 @@ document.getElementById("btn").addEventListener("click", function () {
 // alex.age = 20;
 // console.log(alex);
 // console.log(alex.hisobla(2020));
+
+// new OOP ga oid praktilar
+
+class App {
+  constructor() {
+    this.ekrangaChiqar();
+  }
+
+  ekrangaChiqar() {
+    console.log("salom");
+  }
+}
+
+let newClass = new App();
