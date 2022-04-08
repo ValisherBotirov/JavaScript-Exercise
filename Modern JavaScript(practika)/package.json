@@ -4,11 +4,14 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ishla": "node script.js"
   },
   "author": "Valisher",
   "license": "ISC",
   "dependencies": {
     "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
   }
 }
