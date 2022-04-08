@@ -20,19 +20,35 @@
 // }
 
 // ===========================New practika====================================
-let name = 'Valisher Botirov';
-export let id = 123;
-let age = function (a, b) {
-  return a - b;
-};
-age();
-let d = 20;
+// let name = 'Valisher Botirov';
+// export let id = 123;
+// let age = function (a, b) {
+//   return a - b;
+// };
+// age();
+// let d = 20;
 
-export { name, d, age };
+// export { name, d, age };
 
-export class Person {
-  constructor(name, job) {
-    this.name = name;
-    this.job = job;
-  }
+// export class Person {
+//   constructor(name, job) {
+//     this.name = name;
+//     this.job = job;
+//   }
+// }
+
+// =========Common JS Moduls===============
+let login = 'Valisher';
+let id = 1111;
+
+function kir(inputLogin, inputId) {
+  if (inputLogin == login && inputId == id) {
+    console.log('Siz tizimga muvaffaqiyatli kirdingiz');
+  } else console.log('Parol yoki id xato');
 }
+
+const a = 10;
+module.exports = {
+  a,
+  kir,
+};

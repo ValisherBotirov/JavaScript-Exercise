@@ -44,25 +44,31 @@
 // console.log('Salom');
 
 // ===========The modue pattern=============
-const online = (function () {
-  const cart = [];
-  const maxsulotlarSoni = 100;
-  const ishchilarSoni = 10;
-  const pulMiqdori = 10_000_000;
+// const online = (function () {
+//   const cart = [];
+//   const maxsulotlarSoni = 100;
+//   const ishchilarSoni = 10;
+//   const pulMiqdori = 10_000_000;
 
-  const sotibOlish = function (nomi, soni) {
-    cart.push({ nomi, soni });
-    let name = 'Valisher';
-    console.log(
-      `Siz ${nomi} mahsulotimizdan sotib oldingiz ${soni} ta miqdorda`
-    );
-    return name;
-  };
-  return { sotibOlish, pulMiqdori, cart };
-})();
+//   const sotibOlish = function (nomi, soni) {
+//     cart.push({ nomi, soni });
+//     let name = 'Valisher';
+//     console.log(
+//       `Siz ${nomi} mahsulotimizdan sotib oldingiz ${soni} ta miqdorda`
+//     );
+//     return name;
+//   };
+//   return { sotibOlish, pulMiqdori, cart };
+// })();
 
-// online.ishchilarSoni;
-online.sotibOlish('Apple', 10);
-let soqqa = online.pulMiqdori;
-console.log(soqqa);
-console.log(online.cart);
+// // online.ishchilarSoni;
+// online.sotibOlish('Apple', 10);
+// let soqqa = online.pulMiqdori;
+// console.log(soqqa);
+// console.log(online.cart);
+
+//
+
+const by = require('./by.js');
+console.log(by.a);
+by.kir('Valisher', 1111);
