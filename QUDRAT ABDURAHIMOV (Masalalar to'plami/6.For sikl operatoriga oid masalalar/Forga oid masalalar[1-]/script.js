@@ -271,22 +271,46 @@
 
 // console.log(sum);
 
-let a = 379;
-a = String(a);
-let map = new Map([
-  [0, 6],
-  [1, 2],
-  [2, 5],
-  [3, 5],
-  [4, 4],
-  [5, 5],
-  [6, 6],
-  [7, 3],
-  [8, 7],
-  [9, 6],
-]);
-let sum = 0;
-for (let i = 0; i < a.length; i++) {
-  sum += map.get(Number(a[i]));
+// let a = 379;
+// a = String(a);
+// let map = new Map([
+//   [0, 6],
+//   [1, 2],
+//   [2, 5],
+//   [3, 5],
+//   [4, 4],
+//   [5, 5],
+//   [6, 6],
+//   [7, 3],
+//   [8, 7],
+//   [9, 6],
+// ]);
+// let sum = 0;
+// for (let i = 0; i < a.length; i++) {
+//   sum += map.get(Number(a[i]));
+// }
+// console.log(sum);
+
+// 39-masala
+
+// let a, b;
+// a = 1;
+// b = 8;
+// for (let i = 1; i <= b; i++) {
+//   for (j = 1; j <= i; j++) {
+//     console.log(i);
+//   }
+// }
+
+// 34-masala
+let a1 = 1,
+  a2 = 2;
+let n = 5;
+let ak;
+for (let i = 3; i <= n; i++) {
+  ak = (a1 + 2 * a2) / 3;
+
+  a1 = a2;
+  a2 = ak;
 }
-console.log(sum);
+console.log(ak);

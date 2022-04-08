@@ -2030,14 +2030,32 @@ document.getElementById("btn").addEventListener("click", function () {
 
 // new OOP ga oid praktilar
 
-class App {
-  constructor() {
-    this.ekrangaChiqar();
-  }
+// class App {
+//   constructor() {
+//     this.ekrangaChiqar();
+//   }
 
-  ekrangaChiqar() {
-    console.log("salom");
-  }
-}
+//   ekrangaChiqar() {
+//     console.log("salom");
+//   }
+// }
 
-let newClass = new App();
+// let newClass = new App();
+
+// -------------------------------------------------------
+// Promise bilan amaliyot
+let shart = true;
+let constBook = new Promise(function (resolve, rejact) {
+  if (shart) {
+    let book = {
+      name: "Stive Jobs",
+      cost: 65000,
+    };
+    resolve(book);
+  } else {
+    let error = new Error("Bunday kitob mavjud emas");
+    rejact(error);
+  }
+});
+let result = constBook.then((res) => console.log(res));
+console.log(result);
