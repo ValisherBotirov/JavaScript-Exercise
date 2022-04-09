@@ -4,13 +4,17 @@
   "description": "",
   "scripts": {
     "ishla": "node script.js",
-    "boshla": "npx parcel script.js"
+    "boshla": " parcel script.js",
+    "yasa": "parcel build index.html",
+    "start": "parsel index.html",
+    "build": "parsel build index.html"
   },
   "author": "Valisher",
   "license": "ISC",
   "dependencies": {
     "core-js": "^3.21.1",
-    "leaflet": "^1.7.1"
+    "leaflet": "^1.7.1",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
     "parcel": "^2.4.1"
