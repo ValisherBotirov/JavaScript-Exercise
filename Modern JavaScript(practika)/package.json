@@ -2,13 +2,14 @@
   "name": "yes",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
   "scripts": {
-    "ishla": "node script.js"
+    "ishla": "node script.js",
+    "boshla": "npx parcel script.js"
   },
   "author": "Valisher",
   "license": "ISC",
   "dependencies": {
+    "core-js": "^3.21.1",
     "leaflet": "^1.7.1"
   },
   "devDependencies": {
