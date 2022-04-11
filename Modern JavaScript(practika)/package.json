@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "ishla": "node script.js",
-    "boshla": " parcel script.js",
-    "yasa": "parcel build index.html",
-    "start": "parsel index.html",
-    "build": "parsel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Valisher",
   "license": "ISC",
