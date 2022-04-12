@@ -2044,18 +2044,33 @@ document.getElementById("btn").addEventListener("click", function () {
 
 // -------------------------------------------------------
 // Promise bilan amaliyot
-let shart = true;
-let constBook = new Promise(function (resolve, rejact) {
-  if (shart) {
-    let book = {
-      name: "Stive Jobs",
-      cost: 65000,
-    };
-    resolve(book);
-  } else {
-    let error = new Error("Bunday kitob mavjud emas");
-    rejact(error);
-  }
-});
-let result = constBook.then((res) => console.log(res));
-console.log(result);
+// let shart = true;
+// let constBook = new Promise(function (resolve, rejact) {
+//   if (shart) {
+//     let book = {
+//       name: "Stive Jobs",
+//       cost: 65000,
+//     };
+//     resolve(book);
+//   } else {
+//     let error = new Error("Bunday kitob mavjud emas");
+//     rejact(error);
+//   }
+// });
+// let result = constBook.then((res) => console.log(res));
+// console.log(result);
+
+// Farhod Dadajanov
+
+const circle = {
+  radius: 2,
+  location: {
+    x: 3,
+    y: 4,
+  },
+  draw: function () {
+    console.log("doira");
+  },
+};
+
+circle.draw();
