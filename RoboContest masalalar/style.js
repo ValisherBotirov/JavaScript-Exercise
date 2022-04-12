@@ -97,14 +97,33 @@
 // console.log(a, b);
 
 // 71-masala
-let n = 4;
-let count = 0;
-for (let i = 0; i <= n; i++) {
-  for (let j = 0; j <= n; j++) {
-    if (i + j == n) {
-      count++;
-    }
-    j = j + 1;
+// let n = 4;
+// let count = 0;
+// for (let i = 0; i <= n; i++) {
+//   for (let j = 0; j <= n; j++) {
+//     if (i + j == n) {
+//       count++;
+//     }
+//     j = j + 1;
+//   }
+// }
+// console.log(count);
+
+// 11-masala
+let arr = [54, 65, 72, 20, 3];
+let max = arr[0];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
   }
 }
-console.log(count);
+let index = arr.indexOf(max);
+arr.splice(index, 1);
+
+let max2 = arr[0];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > max2) {
+    max2 = arr[i];
+  }
+}
+console.log(max2);
