@@ -110,20 +110,34 @@
 // console.log(count);
 
 // 11-masala
-let arr = [54, 65, 72, 20, 3];
-let max = arr[0];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > max) {
-    max = arr[i];
-  }
-}
-let index = arr.indexOf(max);
-arr.splice(index, 1);
+// let arr = [54, 65, 72, 20, 3];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// let index = arr.indexOf(max);
+// arr.splice(index, 1);
 
-let max2 = arr[0];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > max2) {
-    max2 = arr[i];
+// let max2 = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max2) {
+//     max2 = arr[i];
+//   }
+// }
+// console.log(max2);
+
+// 11 -masala
+let n = 12;
+let count = 0,
+  soni = 0;
+for (let i = 1; i <= n; i++) {
+  count = 0;
+  for (let j = 1; j <= i; j++) {
+    if (i % j == 0) count++;
   }
+  if (count == 2) soni++;
 }
-console.log(max2);
+if (soni % 2 !== 0) console.log("Ali");
+else console.log("Bobur");

@@ -2074,3 +2074,18 @@ const circle = {
 };
 
 circle.draw();
+
+const doira = function () {
+  return (circle = {
+    radius: 2,
+    location: {
+      x: 3,
+      y: 4,
+    },
+    draw: function () {
+      console.log("doira");
+    },
+  });
+};
+
+doira();
