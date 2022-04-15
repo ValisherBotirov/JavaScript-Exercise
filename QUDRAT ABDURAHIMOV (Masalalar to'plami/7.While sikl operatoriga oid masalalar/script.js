@@ -43,26 +43,46 @@
 
 // Arrayni 2ta boshidan 2ta oxiridan chiqaradi
 
-let arr = [1, 2, 3, 4, 5];
-let p = 0,
-  q = arr.length - 1;
-let index = 0;
-let newArr = [];
-for (let i = 0; i < (arr.length + 1) / 2; i++) {
-  if (index % 4 == 0) {
-    newArr.push(arr[p]);
-    if (p != q) {
-      newArr.push(arr[p + 1]);
-    }
-    p += 2;
-  } else {
-    newArr.push(arr[q]);
-    if (q != p) {
-      newArr.push(arr[q - 1]);
-    }
-    q -= 2;
-  }
-  index += 2;
-}
+// let arr = [1, 2, 3, 4, 5];
+// let p = 0,
+//   q = arr.length - 1;
+// let index = 0;
+// let newArr = [];
+// for (let i = 0; i < (arr.length + 1) / 2; i++) {
+//   if (index % 4 == 0) {
+//     newArr.push(arr[p]);
+//     if (p != q) {
+//       newArr.push(arr[p + 1]);
+//     }
+//     p += 2;
+//   } else {
+//     newArr.push(arr[q]);
+//     if (q != p) {
+//       newArr.push(arr[q - 1]);
+//     }
+//     q -= 2;
+//   }
+//   index += 2;
+// }
 
-console.log(newArr);
+// console.log(newArr);
+
+// =======================================
+// Eng ko'p elemt qatnashgan array
+// let arr = [1, 2, 3, 4, 5, 5, 6, 3, 2, 1, 5, 2, 3, 4, 5, 6, 5, 7, 1, 5, 3, 5];
+// let count,
+//   max = 0,
+//   index;
+// for (let i = 0; i < arr.length; i++) {
+//   count = 0;
+//   for (let j = i; j < arr.length; j++) {
+//     if (arr[i] == arr[j]) {
+//       count++;
+//     }
+//   }
+//   if (max < count) {
+//     max = count;
+//     index = arr[i];
+//     console.log(max, count, index);
+//   }
+// }
