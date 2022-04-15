@@ -109,10 +109,26 @@
 // } else console.log("3 ning darajasi emas");
 
 // 5-masala
-let n = 32; // n = 2 ^ k
-let k = 0;
-while (n >= 2) {
-  n = n / 2;
-  k++;
+// let n = 32; // n = 2 ^ k
+// let k = 0;
+// while (n >= 2) {
+//   n = n / 2;
+//   k++;
+// }
+// console.log(k);
+
+// 6-masala
+let n = 5,
+  res = 1;
+if (n % 2 == 0) {
+  while (n >= 2) {
+    res = res * n;
+    n -= 2;
+  }
+} else {
+  while (n >= 1) {
+    res = res * n;
+    n -= 2;
+  }
 }
-console.log(k);
+console.log(res);
