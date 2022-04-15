@@ -129,15 +129,34 @@
 // console.log(max2);
 
 // 11 -masala
-let n = 12;
-let count = 0,
-  soni = 0;
-for (let i = 1; i <= n; i++) {
-  count = 0;
-  for (let j = 1; j <= i; j++) {
-    if (i % j == 0) count++;
-  }
-  if (count == 2) soni++;
-}
-if (soni % 2 !== 0) console.log("Ali");
-else console.log("Bobur");
+// let n = 12;
+// let count = 0,
+//   soni = 0;
+// for (let i = 1; i <= n; i++) {
+//   count = 0;
+//   for (let j = 1; j <= i; j++) {
+//     if (i % j == 0) count++;
+//   }
+//   if (count == 2) soni++;
+// }
+// if (soni % 2 !== 0) console.log("Ali");
+// else console.log("Bobur");
+
+// let n = 20;
+// let count;
+// for (let i = 1; i <= n; i++) {
+//   count = 0;
+//   for (let j = 1; j <= i; j++) {
+//     if (i % j == 0) {
+//       count++;
+//     }
+//   }
+//   if (count == 2) console.log(i);
+// }
+
+// 6-masala
+let a = 400;
+let yil;
+if (a % 400 == 0 || (a % 4 == 0 && a % 100 !== 0)) {
+  yil = 366;
+} else yil = 365;
