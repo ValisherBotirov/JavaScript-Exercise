@@ -88,12 +88,22 @@
 // }
 
 //3-masala
-let n = 13,
-  k = 5;
-let count = 0;
-while (n >= k) {
-  n = n - k;
-  count++;
+// let n = 13,
+//   k = 5;
+// let count = 0;
+// while (n >= k) {
+//   n = n - k;
+//   count++;
+// }
+// console.log(`Qoldiq : ${n}`);
+// console.log(`Butun qismi : ${count}`);
+
+// 4-masala
+let n = 80;
+let s = 3;
+while (n >= s) {
+  s *= 3;
 }
-console.log(`Qoldiq : ${n}`);
-console.log(`Butun qismi : ${count}`);
+if (s / 3 == n) {
+  console.log("3 ning darajasi");
+} else console.log("3 ning darajasi emas");
