@@ -99,11 +99,20 @@
 // console.log(`Butun qismi : ${count}`);
 
 // 4-masala
-let n = 80;
-let s = 3;
-while (n >= s) {
-  s *= 3;
+// let n = 80;
+// let s = 3;
+// while (n >= s) {
+//   s *= 3;
+// }
+// if (s / 3 == n) {
+//   console.log("3 ning darajasi");
+// } else console.log("3 ning darajasi emas");
+
+// 5-masala
+let n = 32; // n = 2 ^ k
+let k = 0;
+while (n >= 2) {
+  n = n / 2;
+  k++;
 }
-if (s / 3 == n) {
-  console.log("3 ning darajasi");
-} else console.log("3 ning darajasi emas");
+console.log(k);
