@@ -86,3 +86,14 @@
 //     console.log(max, count, index);
 //   }
 // }
+
+//3-masala
+let n = 13,
+  k = 5;
+let count = 0;
+while (n >= k) {
+  n = n - k;
+  count++;
+}
+console.log(`Qoldiq : ${n}`);
+console.log(`Butun qismi : ${count}`);
