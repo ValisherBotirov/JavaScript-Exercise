@@ -35,3 +35,23 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.main {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box {
+  background-color: rgb(255, 217, 0);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.colorChange {
+  color: red;
+}

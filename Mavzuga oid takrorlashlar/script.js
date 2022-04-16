@@ -2062,30 +2062,64 @@ document.getElementById("btn").addEventListener("click", function () {
 
 // Farhod Dadajanov
 
-const circle = {
-  radius: 2,
-  location: {
-    x: 3,
-    y: 4,
-  },
-  draw: function () {
-    console.log("doira");
-  },
-};
+// const circle = {
+//   radius: 2,
+//   location: {
+//     x: 3,
+//     y: 4,
+//   },
+//   draw: function () {
+//     console.log("doira");
+//   },
+// };
 
-circle.draw();
+// circle.draw();
 
-const doira = function () {
-  return (circle = {
-    radius: 2,
-    location: {
-      x: 3,
-      y: 4,
-    },
-    draw: function () {
-      console.log("doira");
-    },
-  });
-};
+// const doira = function () {
+//   return (circle = {
+//     radius: 2,
+//     location: {
+//       x: 3,
+//       y: 4,
+//     },
+//     draw: function () {
+//       console.log("doira");
+//     },
+//   });
+// };
 
-doira();
+// doira();
+
+// Ichma-ich fungsiyaga misol
+// const info = function(age,name){
+//   let birthYear = 2002;
+//   console.log(name);
+//   return calcAge(){
+//     return this.birthYear - age;
+//   }
+// }
+
+const main = document.querySelector(".main");
+const box = document.querySelector(".box");
+const text = document.querySelector(".text");
+const btn = document.querySelector(".btn--text");
+
+let get = true;
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  // 1-usil
+  // box.classList.add("hidden");
+  text.classList.toggle("colorChange");
+  console.log(text.classList);
+
+  // 2-usul
+  // if (get) {
+  //   text.style.color = "red";
+  //   get = false;
+  // } else {
+  //   text.style.color = "black";
+  //   get = true;
+  // }
+});
+
+// console.log(main.children);
