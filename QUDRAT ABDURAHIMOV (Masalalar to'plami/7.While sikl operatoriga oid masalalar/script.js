@@ -179,15 +179,15 @@
 // console.log(i, sum);
 
 // 17-masala
-let n = 14; // n / m
-let m = 3,
-  count = 0,
-  mod = m;
-while (m <= n) {
-  count++;
-  m += m;
-  console.log(count);
-}
-// console.log(mod);
-// console.log(n - mod * count);
-console.log(count);
+// let n = 14; // n / m
+// let m = 3,
+//   count = 0,
+//   mod = m;
+// while (m <= n) {
+//   count++;
+//   m += m;
+//   console.log(count);
+// }
+// // console.log(mod);
+// // console.log(n - mod * count);
+// console.log(count);
