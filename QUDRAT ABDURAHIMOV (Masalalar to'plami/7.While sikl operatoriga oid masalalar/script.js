@@ -156,3 +156,13 @@
 //   k++;
 // }
 // console.log(k - 1);
+
+// 11-masala
+let n = 46;
+let k = 1,
+  sum = 0;
+while (sum <= n) {
+  sum += k;
+  k++;
+}
+console.log(k - 1, sum);
