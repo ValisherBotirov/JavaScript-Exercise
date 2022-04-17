@@ -134,9 +134,17 @@
 // console.log(res);
 
 // 7-masala
-let n = 30;
-let k = 0;
-while (k * k < n) {
+// let n = 30;
+// let k = 0;
+// while (k * k < n) {
+//   k++;
+// }
+// console.log(k);
+
+// 9-masala
+let n = 82;
+let k = 1;
+while (3 ** k < n) {
   k++;
 }
 console.log(k);
