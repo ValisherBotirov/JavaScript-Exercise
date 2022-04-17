@@ -141,10 +141,18 @@
 // }
 // console.log(k);
 
-// 9-masala
-let n = 82;
-let k = 1;
-while (3 ** k < n) {
-  k++;
-}
-console.log(k);
+// ""// 9-masala
+// let n = 82;
+// let k = 1;
+// while (3 ** k < n) {
+//   k++;
+// }
+// console.log(k);""
+
+// 10-masala
+// let n = 81;
+// let k = 1;
+// while (3 ** k <= n) {
+//   k++;
+// }
+// console.log(k - 1);
