@@ -158,11 +158,22 @@
 // console.log(k - 1);
 
 // 11-masala
-let n = 46;
-let k = 1,
-  sum = 0;
-while (sum <= n) {
-  sum += k;
-  k++;
-}
-console.log(k - 1, sum);
+// let n = 46;
+// let k = 1,
+//   sum = 0;
+// while (sum <= n) {
+//   sum += k;
+//   k++;
+// }
+// console.log(k-1, sum);
+
+// 15-masala
+// let s = 100; //s2 = 200
+// let p = 20,
+//   i = 0;
+// let sum = s;
+// while (sum < 2 * s) {
+//   sum += (sum * p) / 100;
+//   i++;
+// }
+// console.log(i, sum);
