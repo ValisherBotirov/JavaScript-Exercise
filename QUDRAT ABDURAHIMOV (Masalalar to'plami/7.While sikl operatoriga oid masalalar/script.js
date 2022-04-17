@@ -118,17 +118,25 @@
 // console.log(k);
 
 // 6-masala
-let n = 5,
-  res = 1;
-if (n % 2 == 0) {
-  while (n >= 2) {
-    res = res * n;
-    n -= 2;
-  }
-} else {
-  while (n >= 1) {
-    res = res * n;
-    n -= 2;
-  }
+// let n = 5,
+//   res = 1;
+// if (n % 2 == 0) {
+//   while (n >= 2) {
+//     res = res * n;
+//     n -= 2;
+//   }
+// } else {
+//   while (n >= 1) {
+//     res = res * n;
+//     n -= 2;
+//   }
+// }
+// console.log(res);
+
+// 7-masala
+let n = 30;
+let k = 0;
+while (k * k < n) {
+  k++;
 }
-console.log(res);
+console.log(k);

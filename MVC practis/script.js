@@ -1,5 +1,17 @@
-import obj from "./veiw.js";
-console.log(obj);
+import { state } from "./model";
+// await getCountry("uzbekistan");
+// console.log(state.data);
 
-import { x } from "./model.js";
-console.log(x);
+const getCountry = async function (number) {
+  try {
+    const dataJson = await fetch(
+      `https://quranenc.com/api/translation/sura/uzbek_mansour/${number}`
+    );
+    const data = await dataJson.json();
+    console.log(data);
+  } catch (err) {
+    alert(err);
+  }
+};
+
+getCountry(2);
