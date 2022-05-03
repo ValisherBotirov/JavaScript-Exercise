@@ -243,14 +243,26 @@
 // else console.log("Tub son emas");
 
 // 23-masala
-let a = 4,
-  b = 80;
-let s = 2;
-while (b > 1) {
-  if (b % s == 0) {
-    b = Math.round(b / s);
-    console.log(s);
-  } else {
-    s++;
-  }
-}
+// let a = 6,
+//   b = 21;
+// let result;
+// while (b > a) {
+//   b = b - a;
+//   result = b;
+// }
+
+// console.log(result);
+
+// tub ko'paytuvchilarga ajratish
+
+// let a = 4,
+//   b = 80;
+// let s = 2;
+// while (b > 1) {
+//   if (b % s == 0) {
+//     b = Math.round(b / s);
+//     console.log(s);
+//   } else {
+//     s++;
+//   }
+// }
