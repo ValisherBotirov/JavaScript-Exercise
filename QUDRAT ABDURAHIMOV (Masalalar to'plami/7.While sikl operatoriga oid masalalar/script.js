@@ -196,16 +196,34 @@
 //
 
 // 18-masala
-let n = 123;
-let s;
-let arr = [];
+// let n = 123;
+// let s;
+// let arr = [];
+// while (n > 0) {
+//   s = n % 10;
+//   // console.log(s);
+//   arr.push(s);
+//   n = Math.round(n / 10);
+// }
+
+// console.log(arr);
+// let result = arr.reverse().join("");
+// console.log(result + "Natija");
+
+// 19-20-18-masala
+let n = 123456222;
+let s,
+  count = 0;
 while (n > 0) {
   s = n % 10;
-  // console.log(s);
-  arr.push(s);
   n = Math.round(n / 10);
+  if (s == 2) {
+    count++;
+  }
 }
 
-console.log(arr);
-let result = arr.reverse().join("");
-console.log(result + "Natija");
+if (count > 0) {
+  console.log(`${count} ta 2 qatnashgan`);
+} else {
+  console.log("2 soni qatnashmagan");
+}
