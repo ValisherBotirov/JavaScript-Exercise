@@ -207,5 +207,5 @@ while (n > 0) {
 }
 
 console.log(arr);
-console.log(arr.reverse().join(""));
-console.log("he");
+let result = arr.reverse().join("");
+console.log(result);
