@@ -229,15 +229,28 @@
 // }
 
 // 22-masala
-let n = 12;
-let s = 2,
-  count = 0;
-while (n >= s) {
-  if (n % s == 0) {
-    count++;
-  }
-  s++;
-}
+// let n = 12;
+// let s = 2,
+//   count = 0;
+// while (n >= s) {
+//   if (n % s == 0) {
+//     count++;
+//   }
+//   s++;
+// }
 
-if (count === 1) console.log("Tub son");
-else console.log("Tub son emas");
+// if (count === 1) console.log("Tub son");
+// else console.log("Tub son emas");
+
+// 23-masala
+let a = 4,
+  b = 80;
+let s = 2;
+while (b > 1) {
+  if (b % s == 0) {
+    b = Math.round(b / s);
+    console.log(s);
+  } else {
+    s++;
+  }
+}
