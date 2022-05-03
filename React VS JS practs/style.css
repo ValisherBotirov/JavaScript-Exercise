@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pagination {
+  width: 60%;
+  height: 60px;
+  margin: 60px auto;
+  overflow: scroll;
+  padding: 60px 120px;
+}
+
+.btn--parent {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+}

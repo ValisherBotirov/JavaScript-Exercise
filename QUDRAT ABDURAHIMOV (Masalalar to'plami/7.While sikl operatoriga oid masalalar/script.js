@@ -191,4 +191,20 @@
 // // console.log(mod);
 // // console.log(n - mod * count);
 // console.log(count);
-let x = 50;
+// let x = 50;
+
+//
+
+// 18-masala
+let n = 123;
+let s;
+let arr = [];
+while (n > 0) {
+  s = n % 10;
+  // console.log(s);
+  arr.push(s);
+  n = Math.round(n / 10);
+}
+
+console.log(arr);
+console.log(arr.reverse().join(""));
