@@ -208,3 +208,4 @@ while (n > 0) {
 
 console.log(arr);
 console.log(arr.reverse().join(""));
+console.log("he");
