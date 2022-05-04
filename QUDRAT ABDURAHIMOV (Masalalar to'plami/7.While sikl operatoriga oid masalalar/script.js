@@ -266,3 +266,17 @@
 //     s++;
 //   }
 // }
+
+// 24-masala
+let n = 20;
+let k1 = 1,
+  k2 = 1;
+let i = 3;
+let kn = k2 + k1;
+while (n > kn) {
+  kn = k1 + k2;
+  console.log(kn);
+  k1 = i - 1;
+  k2 = i - 2;
+  i++;
+}
