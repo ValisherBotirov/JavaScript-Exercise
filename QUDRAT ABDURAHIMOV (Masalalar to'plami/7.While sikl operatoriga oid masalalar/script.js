@@ -342,12 +342,12 @@
 //   index++;
 // }
 
-28-masala
-let e = 20;
-let a1 = 2 , k = 2;
-let akx = a1;
-let ak = a1 + 1 / akx;
-while (Math.abs(ak - akx) < e) {
-  ak = a1 + 1 / akx;
-  akx =
-}
+// 28-masala
+// let e = 20;
+// let a1 = 2 , k = 2;
+// let akx = a1;
+// let ak = a1 + 1 / akx;
+// while (Math.abs(ak - akx) < e) {
+//   ak = a1 + 1 / akx;
+//   akx =
+// }
