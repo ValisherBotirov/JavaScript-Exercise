@@ -320,24 +320,34 @@
 // }
 
 // 26-masala
-let n = 20;
-let k1 = 1,
-  k2 = 1;
-let kn = k2 - k1;
-let arr = [];
-let index = 3;
-while (n >= kn) {
-  kn = k2 + k1;
-  arr.push(kn);
-  if (kn > n) {
-    let length = arr.length;
-    for (let i = 1; i < arr.length; i++) {
-      console.log(arr[i]);
-      // console.log(length);
-    }
-    console.log(arr[length - 1], arr[length - 2]);
-  }
-  k2 = index - 2;
-  k1 = index - 1;
-  index++;
-}
+// let n = 20;
+// let k1 = 1,
+//   k2 = 1;
+// let kn = k2 - k1;
+// let arr = [];
+// let index = 3;
+// while (n >= kn) {
+//   kn = k2 + k1;
+//   arr.push(kn);
+//   if (kn > n) {
+//     let length = arr.length;
+//     for (let i = 1; i < arr.length; i++) {
+//       console.log(arr[i]);
+//       // console.log(length);
+//     }
+//     console.log(arr[length - 1], arr[length - 2]);
+//   }
+//   k2 = index - 2;
+//   k1 = index - 1;
+//   index++;
+// }
+
+// 28-masala
+// let e = 20;
+// let a1 = 2 , k = 2;
+// let akx = a1;
+// let ak = a1 + 1 / akx;
+// while (Math.abs(ak - akx) < e) {
+//   ak = a1 + 1 / akx;
+//   akx =
+// }
