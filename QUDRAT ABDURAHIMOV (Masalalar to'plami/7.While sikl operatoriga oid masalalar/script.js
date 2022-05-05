@@ -302,22 +302,22 @@
 //   i++;
 // }
 
-25 - masala;
-let n = 20;
-let k1 = 1,
-  k2 = 1;
-let kn = k2 - k1;
-let index = 3;
-while (n >= kn) {
-  kn = k2 + k1;
-  if (kn > n) {
-    console.log(kn);
-    break;
-  }
-  k2 = index - 2;
-  k1 = index - 1;
-  index++;
-}
+// 25-masala
+// let n = 20;
+// let k1 = 1,
+//   k2 = 1;
+// let kn = k2 - k1;
+// let index = 3;
+// while (n >= kn) {
+//   kn = k2 + k1;
+//   if (kn > n) {
+//     console.log(kn);
+//     break;
+//   }
+//   k2 = index - 2;
+//   k1 = index - 1;
+//   index++;
+// }
 
 // 26-masala
 // let n = 20;
