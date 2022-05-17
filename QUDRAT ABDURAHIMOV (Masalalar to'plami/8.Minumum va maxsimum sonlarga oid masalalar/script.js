@@ -11,16 +11,16 @@
 // console.log(max);
 
 // 14-masala
-let b = 60;
-let index = "";
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > b) {
-    index = arr[i];
-    break;
-  }
-}
+// let b = 60;
+// let index = "";
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > b) {
+//     index = arr[i];
+//     break;
+//   }
+// }
 
-if (index) {
-  console.log(index);
-} else console.log("00");
+// if (index) {
+//   console.log(index);
+// } else console.log("00");
