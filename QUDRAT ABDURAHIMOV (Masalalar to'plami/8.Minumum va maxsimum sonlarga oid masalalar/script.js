@@ -24,3 +24,21 @@
 // if (index) {
 //   console.log(index);
 // } else console.log("00");
+
+// 19-masala
+let n = 10;
+let arr = [];
+for (let i = 0; i < n; i++) {
+  let random = Math.trunc(Math.random() * 30 - 10);
+  arr.push(random);
+}
+console.log(arr);
+
+let count = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > n) {
+    console.log(arr[i]);
+    count++;
+  }
+}
+console.log(count);
