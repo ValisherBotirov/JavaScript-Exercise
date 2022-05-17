@@ -354,7 +354,7 @@
 //   a1 = k++;
 // }
 
-// 30-masala
+// // 30-masala
 // let a, b, c;
 // a = 4;
 // b = 5;
@@ -362,10 +362,31 @@
 // let s = a * b;
 // let count = 0;
 // let sqr = c * c;
-// while (s < sqr) {
+// while (s > sqr) {
 //   count++;
 //   sqr += c * c;
 // }
 // console.log(count);
 
-console.log("salom");
+// 30-masala //2-usul
+let a, b, c;
+a = 6;
+b = 9;
+c = 3;
+
+let count1 = 0;
+let count2 = 0;
+
+let x = c;
+let y = c;
+while (a >= x) {
+  count1++;
+  x += c;
+}
+
+while (b >= y) {
+  count2++;
+  y += c;
+}
+
+console.log(count1 * count2);
