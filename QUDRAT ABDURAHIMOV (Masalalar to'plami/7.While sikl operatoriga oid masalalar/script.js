@@ -369,24 +369,24 @@
 // console.log(count);
 
 // 30-masala //2-usul
-let a, b, c;
-a = 6;
-b = 9;
-c = 3;
+// let a, b, c;
+// a = 6;
+// b = 9;
+// c = 3;
 
-let count1 = 0;
-let count2 = 0;
+// let count1 = 0;
+// let count2 = 0;
 
-let x = c;
-let y = c;
-while (a >= x) {
-  count1++;
-  x += c;
-}
+// let x = c;
+// let y = c;
+// while (a >= x) {
+//   count1++;
+//   x += c;
+// }
 
-while (b >= y) {
-  count2++;
-  y += c;
-}
+// while (b >= y) {
+//   count2++;
+//   y += c;
+// }
 
-console.log(count1 * count2);
+// console.log(count1 * count2);
