@@ -15,13 +15,23 @@ let sum = 0;
 // };
 
 //--//declaration function
-function digitCountFunc(number) {
+// function digitCountFunc(number) {
+//   number = number.toString();
+//   for (let i = 0; i < number.length; i++) {
+//     sum += +number[i];
+//     count++;
+//   }
+//   return sum;
+// }
+
+//--//expesion function
+const digitCountFunc = function (number) {
   number = number.toString();
   for (let i = 0; i < number.length; i++) {
     sum += +number[i];
     count++;
   }
   return sum;
-}
+};
 
 console.log(digitCountFunc(123456));
